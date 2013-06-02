@@ -7,8 +7,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class CaminoVoxBddOpen extends SQLiteOpenHelper {
 	
-	/**J'ai fait une modif !! -- à supprimer après comit test**/
-	
 	
 	private static final String TABLE_ALBERGUES= "albergues";
 	private static final String COLONNE_ALBERGUE_ID ="id";
