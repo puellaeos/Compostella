@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+        <!-- Langue FR -->
+    
+    <string name="app_name">Buen Camino</string>
+    <!-- Titre des activites -->
+    <string name="TitreCompostellaMenu">Buen Camino</string>
+    
+    <string name="TitreAPropos">A Proposito de</string>
+    <string name="TitrePreparation">Preparar</string>
+    <string name="TitrePapiers">Organizar</string>
+    <string name="TitreSequiper">Equiparse</string>
+    <string name="TitreDormir">Dormir</string>
+    <string name="TitreManger">Comer</string>
+    <string name="TitreMarcher">Caminar</string>
+    
+    <string name="TitreJournal">Fotografía</string>
+    <string name="TitrePelerinage">Peregrinación</string>
+    <string name="TitreHistoire">La historia</string>
+    <string name="TitreChemins">Los caminos</string>
+    <string name="TitreMotsCles">Las expresiones</string>
+    
+    <string name="TitreOutils">Herramientas</string>
+    <string name="TitreDictionnaire">Traductor</string>
+     
+    <string name="TitreCompostelle">Diario</string>    
+    <string name="TitreCompostelleNewStep">Crear une nueva etapa</string>
+    <string name="TitreCompostelleListStep">Ver mi camino</string>
+    <string name="TitreCompostelleStep">Etapa </string>
+    
+    <string name="TitreTorche">Linterna</string>
+    
+    
+    <!-- Texte des activites -->
+    <string name="TexteAPropos">Version 2.1\n\nDesarrollado por Aurore Chaligné\n\n Para mejorar este application, puedes escribirme con ideas.n\nBuen Camino ;)</string>
+    <string name="TexteTorcheCompatible">Tocar la imagen de la pantalla para alumbrar el teléfono y la imagen de linterna para alumbrar el flash del teléfono</string>
+    <string name="TexteTorcheNotCompatible">Tocar la imagen de la pantalla para alumbrar el teléfono \nVuestra teléfono no es compatible con la funcionalidad de linterna</string>
+    <string name="SpinnerCategorieTitre">Categoría</string>
+    
+    <string name="TexteStepDate">Fecha</string>
+    <string name="TexteStepDistance">Distancia</string>
+    <string name="TexteStepStart">Salida</string>
+    <string name="TexteStepEnd">Llegada</string>
+    <string name="TexteStepComment">Comentario</string>    
+    <string name="TexteStepSave">Grabar</string>    
+    <string name="TexteStepPartager">Compartir</string>    
+    <string name="TexteStepModificate">Modificar</string>
+    <string name="TexteStepMandatory">Los campos fecha, distancia, salida, llegada son obligatorios</string>
+   <!-- ¡¡¿ -->
+	<string-array name="TexteManger">
+		<item >Comer y beber son sin duda las dos prioridades cuando comienza el camino de Santiago. Bebida regularmente durante la marcha evita la deshidratación, insolación y especialmente la tendinitis que le obligan a parar su viaje. Parece obvio que para caminar muchos kilómetros, se recomiendan comidas nutritivas. Según presupuestos, es posible hacer sus propios platos o para ir al restaurante.\nLo que siguie habla de la parte eapañola del camino.</item>
+		<item >Menu del pelegrino\n\nEn los pueblos y en las ciudades, los restaurantes ofrecen un menú del Pellegrino o menú del dia. Estos menús están disponibles a un precio razonable entre 8 y 12 euros. Por esta suma de dinero, el menú contiene dos platos ( el primer plato y el segundo plato) que son platos de la carta, un postre y una bebida. El primer plato puede ser una sopa, una ensalada, un plato de pasta o paella. El segundo plato es un plato de carne o pescado generalmente (trucha o lumo). El postre puede ser un yogur, una fruta o un helado. La bebida regularmente eligada de los peregrinos es el vino. El vino tinto español es generalmente más dulce que el vino tinto francés y se bibe fácilmente ¡ Tenga cuidado de no beber desmasiado o dolor de cabeza esperará a despertar!</item>
+		<item >Los Platos\n\nEl bocadillo es el sandwich español. Puede ser con jamón, queso, tortilla de patatas  etc.... Personalmente, no hay  mejor que un buen bocadillo para alimentar y proporcionar fuerzas para el camino y esto a un precio razonable. \nPaella es un  plato simbólico de España que se encuentra a menudo en los cartas de los restaurantes. A base de arroz, este plato es suficiente para comer. Contrario a lo que uno piensa, hay varios tipo de paella. La mas conocida es la paella valenciana con carne y arroz. También existe una paella de marisco en lugar de carne. \nTambién se encuentra en las cartas las sopas frias como el  gazpacho  para beber  o sopas calientes  de verduras o sopa de ajo que hace calor en clima húmedo y frío.</item>
+	</string-array>
+    <string-array name="TexteDormir">
+      	<item >Después de caminar y de comer, soñar es la actividad más importante, porque el descancso permite estar en forma para volver a marcharse el día siguiente. Existen diversas categorías de la vivienda en España por los peregrinos.</item>
+		<item >Albergue\n\nLos alberges son vivendias para los peregrinos. Se puede administrar por los municipios (albergue municipal) o estar alberges privados. El precio de los alberges varía entre 5 y 12 euros, y algunos alberges también puede ser pagado por el "donativo", lo que significa que el precio no es fijo y que el peregrino da lo que quiere. Los alberges son dormitorios con literas y duchas a veces mixtos. La mayoría de los alberges tienen cocina que le permite preparar sus comidas y para algunos de lavadora y secadora (siempre es posible lavar ropa a mano), y  también puntos de acceso Wi-F y ordenadores lo que le permite conectarse a internet. Atención sin embargo, estos servicios son a menudo pagados.</item>
+		<item >Casa rural\n\nExiste la casa rural que corresponde al \'chambre d\'hôte\' en Francia o el \'Bed and Breakfast\' en Inglaterra. El precio de la vivienda es superior a los alberges de los peregrinos pero la vivienda es más cómoda.</item>
+		<item >También es posible alojarse en hoteles pero se encontrará con menos peregrinos porque este tipo de vivienda es sin duda el más caro de todos. \n\nPersonalmente, el modo de vivienda que prefiero es el alberge porque se encuentra los conocimientos del camino y así compartir tu aventura o repartir un comida o un copa de vino.</item>
+	</string-array>   
+	<string-array name="TexteSequiper">
+		<item >La preparación de la mochila es un paso importante en la preparación del camino y con vistas a la realización del viaje. Pensa a las largas y duras horas sobre el camino con un bolso sobrecargado. Así para evitar dolores de espalda pensa práctica desde el principio teniendo la mínima. En promedio para una mujer recomendamos 7 a 9 kg  y para un hombre hasta 12 kg, aunque esto depende de la fuerza cada uno. Pero no te preocupes si tienes objetos en demasiado usted puede siempre arrojar durante le camino enviar tus objectos a tu correo. </item>
+		<item > Para dar una idea de aquí es lo que hice: \n3 camisetas (2 son suficientes), \n 1pantalon/\n1pantalon corto,\n3 pares de calcetines (2 son suficientes), \n2 conjunto de ropa interior, \n1 zapato typo de trail (más ligera que zapatos de caminata y hay poco montaña para justificar la toma),\n1 par de sandalias comodas por la tarde,\n1 bolsa de dormir (1 toalla de seda sólo en el verano y es más ligera),\n1 ropa de lluvia (usado 1 vez y demostró para ser muy útil), 1 ropa de noche, 1 polar (incluso en el verano, es necesaria cuando sale a las 6:30 y es noche todavía), \n1 sombrero, \ngafas de sol,\n1 bolsillo de agua (1Litro),\n 1 par de bastones de trekking, neceser (cepillo de dientes, cepillo para el pelo, crema protectora del sol, pinzas, navaja, afeitado, aceite desodorante, champú, ducha gel, lavar la ropa a mano líquido), \nel kit de primeros auxilios (piel doble preparación contra las bombillas, antiséptico, aguja hilo y costura, imperdible, crema after Sun, cortauñas);\notros (pinza de ropa, tela de alambre, block de apuntes, lápiz, móvil).\nunas bolsas de plástico para guardar la ropa húmeda, alimentos, \n1 guía de referencia los servisios sobre el camino (por ejemplo comer y dormir,sin querer hacer pub). \nSin embargo, si haces el camino en temporada media será necesario tomar alguna ropa más caliente y polainas para lluvia.\n</item>
+	</string-array>
+    <string-array name="TexteMarcher">
+        <item >¿Porquer caminar?\n\nDurante siglos, los caminantes de Santiago fueron caminantes de Dios, es decir, los peregrinos que estaban de camino a pie hasta Santiago, hacer penitencia en remisión de sus pecados. Hoy, un gran número de personas están en camino con destino a la ciudad Santa por razones religiosas, pero es más raro que camine para expiar. Pelegrinos de Santiago considerar el viaje como un paso en su vida, un tiempo para dedicarse a descansar por un descanso inteligente y constructivo. De hecho, muchos se encuentran en este encontrar que el Camino de Santiago supera con mucho el simple paso de senderismo y peregrinación un poco obtuso.</item>
+        <item >¿Cuando salir?\n\nCada uno es libre de salir a la época que quiere, pero los períodos de afluencia podrían variar. En Francia, el período de afluencia más alta comienza en abril y termina en junio.\nEn España fue durante el entretiempo que hay las mejores condiciones para caminar : meños pelegrinos y un clima más templado serán sus aliados, como desde la primavera hasta mediados de agosto.\nSaber más que el caminante promedio viaja entre 3 y 4 km en una hora, y una caminata diaria es de 4 a 5 horas: el tiempo de la peregrinación depende de la ruta elegida. Pero no olvidar no demasiado calculador y aprovechar el camino.</item>
+		<item >¿De dónde ir?\n\nNo hay ninguna regla en la salida para el punto de salida de la ruta. Puedes ir de donde quieras! Por ejemplo, cuando el camino pasacerca de algunos peregrinos, preferen salir de su casa, otros van a putnos de salir más o menos oficial del Camino, como le Puy en Velay o St. Jean de Pied de Port.\nSin embargo, para oficialmente validar la peregrinación y recibir la Compostela, deben han cubierto los últimos 100 kilómetros a pie o los últimos 200 kilómetros en bicicletas hasta la ciudad de Compostela.</item>
+		<item >¿Ir solos o en grupo?\n\nEn el camino hay muchos persona sola (hombre o mujer). Sin embargo, hacemos nunca están aislados en el camino (a menos que sea lo que quieres). En cada paso, nos reunimos viejas o nuevas caras y nunca se siente perdido. Usted puede conocer gente con quien poder caminar a la misma velocidad y conseguir juntos el paisaje pero no es un requisito: todo el mundo respeta la velocidad del otro, y siempre podemos cumplir en la tarde para disfrutar de una bebida y comer. A primera vista ir en grupos nos asegura ir acompañado durante el viaje. Pero tendrá que prestar atención al ritmo y estilo de vida, de las comidas, horarios de siesta, velocidad de cada una persona del grupo. Después de todo debe seguir siendo un placer para todo el mundo a caminar por el camino¡ Mientras estás solo o en grupo, venga sobre el camino!</item>
+	</string-array>
+    <string-array name="TextePapiers">
+        <item >Identidad\n\nComo un viajero, español u otras nacionalidades, hay que siempre usar cualquier documento que acredite su identidad (prueba de identidad o pasaporte). Para ciudadanos de la UE prueba de identificación es suficiente y preferible porque es más ligero llevar. Los albergues pide este documento para anotar el número de tarjeta de identidad.</item>
+		<item >Carta de enfermedad\n\nPara los europeos hay una carta sanitaria europea libre que permite el reembolso de la atención médica en Francia y en España en caso de enfermedad. Esta carta debe ser solicitada al fondo dependes para los servicios seguros en su país.</item>
+		<item >la Credentiale\n\nLa credentiale es una certificación para autenticar al peregrino. Se emite por las sociedades (secular credentiale) o la Iglesia (credentiale religioso). Este papel es necesaria para acceder a la comunidad española, ya que algunos albergues aceptará sólo los titulares de los peregrinos de credentiale. Sin embargo, poco se aplica en Francia. Es necesario presentar su credentiale complementado por el signo de las almohadillas del paso de los peregrinos a lo largo de su viaje. Es posible obtener sellos de los albergues de peregrinos, pero también en los restaurantes, iglesias etc.</item>
+    </string-array>
+    <string-array name="TexteHistoire">
+        <item >La peregrinación a Santiago de Compostela es una peregrinación católica, cuyo objetivo es lograr la legendaria tumba de apóstol San Juan mayor, ubicada en la cripta de la Catedral de Santiago de Compostela, en Galicia (España). Los caminos de Santiago de Compostela que corresponden a varias rutas en España y Francia, han sido declarados en 1987 Primer Itinerario cultural por el Consejo de Europa.</item>
+        <item >Hermano de San Juan, llamado por Jesús, mientras él se pesca en las aguas de Tiberíades, Santiago evangelizó la España antes de ser martirizado y decapitado en Jerusalén bajo el mando del rey Hérode, a 44 después de Cristo Jesús. Su cuerpo fue entregado en la comida a los perros, antes de ser recogidos por sus compañeros. Colocaron su cuerpo en un barco que encalló en el Padrón, en la costa de Galicia. Guiados por un ángel, había navegado a través del Mediterráneo y cruzó el estrecho de Gibraltar.</item>
+        <item >Alrededor del año 800, frente a la costa española, descubrió la tumba de Santiago. Es el ermitaño Pelagio, quien, en un sueño, una visión de la tumba de Santiago. Se guía por una estrella a un campo (el campo de la estrella, o campus stellae en latín), que se convertirá en Compostela. Sin embargo, en este momento, la España se vio envuelto en las invasiones de los moros. La religión es la voluntad de desempeñar un papel decisivo. Alfonso II, soberano del Reino de Galicia, tuvo la idea de una reconquista del territorio y construyó una iglesia en Santiago. Los peregrinos fueron pronto verter, atraídos por la leyenda de Saint-Jacques. Compostela se convirtió en uno de los símbolos de la Reconquista, y Santiago lleva el sobrenombre de matamore, el asesino de moros. La peregrinación a Compostela se convierte en el siglo XI una gran peregrinación de la cristiandad medieval. Pero fue sólo en 1492 que el Papa Alexandre VI declaró oficialmente Santiago de Compostela en lugar de una de las tres grandes peregrinaciones de la cristiandad, con Jerusalén y Roma. Desde el siglo XV, los conflictos de intereses y asistencia religiosa declive de los caminos de Compostela; la peregrinación se reanudará en el siglo XX. Ahora, a pesar de la disminución en el sentido religioso, creyentes y ateos van en el camino cada vez mayor.</item>
+    </string-array>
+    <string-array name="TexteChemins">
+        <item >Hay múltiples rutas de llegar a la Catedral de Santiago de Compostela en España:\n el Camino Francés (camino francés), la salida de Saint-Jean-pie-de-Port/Roncesvalles/Puente la Reina, dependiendo de si incluye o no el Camino navarro y la parte francesa. \n El Camino del norte (ruta norte dijo costera), que corre a lo largo de toda la costa cantábrica desde el país Vasco. \n El Camino Inglés (camino inglés), que comienza en el Ferrol o Coruña puerto de desembarco de los peregrinos Español llegar por barco y continuar su peregrinaje a pie. \n El portugues de Camino (camino portugués), que incluye varias rutas, una por la costa a través de la provincia de Pontevedra y otra desde el interior a través de la provincia de Orense, que se funde a Ourense con la Vía de la Plata. \n El Vía de la Plata (ruta de la plata), que viene de Andalucía, tiene varios nombres tras ramificaciones que o bien llevar al Camino frances, entrar en la provincia de Orense, en Galicia y unirse a la ruta portuguesa del Interior.</item>        
+		<item >En Francia, también hay varios puntos de partida para el camino: \n la via Turonensis, pasando por París y Tours. Esta ruta se une a la España por Saint-Jean-Pied-de-Port. Se habla del camino de París.\n La vía Lemovicensis, que pasa a través de Limoges, de ahí su nombre y el santuario fue Vézelay. Esta ruta se une a la España por Saint-Jean-Pied-de-Port. Hay que hablar del camino de Vézelay.\n La via Podiensis, que toma su nombre de le Puy-en-Velay. Este camino está señalizado como GR 65. Esta ruta se une a la España por Saint-Jean-Pied-de-Port. Se habla de camino del Puy, en la ciudad del Puy-en-Velay, dijo la Santiago.\n La vía Tolosana, pasando por Toulouse, de ahí su nombre, pero también se llama a través de Arletanensis con el santuario de Arles. Esta ruta se une a la España a través del paso de Somport. Se habla del camino de Arles.</item>
+    </string-array>
+    <string-array name="TexteMotsCles">
+        <item >Buen camino\n\nLa expresión es como el \'hola\' de los pelegrinos. Esta expresión es que se oirá más en el camino de un peregrino o de una persona local.</item>
+   	 	<item >Crédentiale\n\nEl término Credentiale proviene de credenza, que significa confianza. Es el libro del peregrino, una certificación expedida para autenticar su motivación espiritual. Establece un clima de buena voluntad entre pelegrinos que pide un sello en cada etapa. Obtienes mas informaciónes en la parte \'Preparación\'</item>
+		
+		<!-- Ce document, qui est écrit en latin, atteste que le voyageur a fait le pèlerinage pour venir se recueillir sur la tombe de l’apôtre Jacques. Il est remis au bureau des pèlerinages de la cathédrale de la ville sainte. Si tu effectues les 100 derniers kilomètres du chemin de Compostelle à pieds ou les 200 derniers à vélo et que les coups de tampon sur ta Crédentiale le confirment (2 tampons par jour de marche), on te donnera La Compostela. Depuis 2009, le certificat est donné qu’aux pèlerins ayant une crédentiale donnée par l’Eglise.  -->
+        <item >Compostela\n\nEste documento, esrito en Latino, prueba que el viajero haca su peregrinación para ir a la tumba de apóstol San Juan. Se da al oficina del peregrinación de la catedrale de Santiago. Si haces los últimos 100 kilómetros a pie o los últimos 200 kilómetros en bicicletas hasta la ciudad de Compostela y que los sellos de tu credential lo prueban (2 sellos por día de marcha), se te da la Compostella. Desde 2009, solo los pelegrinos que tengan une credentiale religiosa obtienen el certificado.</item>
+        <item >Ultreya\n\nComo dicen algunos peregrinos: ULTREYA. Esto significa: ir más, ir más arriba. Es la expresión del desbordamiento ya sea física o mental. Descubrirás que esta frase tiene un sentido en el camino</item>
+    </string-array>   
+    <string-array name="SpinnerLangueItem">
+        <item >Ingles</item>
+        <item >Frances</item>
+        <item >Español</item>
+        <item >Alemán</item>
+        <item >Italiano</item>
+    </string-array>
+    <string-array name="SpinnerCategorie">
+        <item >Alimento</item>
+        <item >Discutir</item>
+        <item >Lugares</item>
+        <item >Mover</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutActivity">
+
+      <TextView
+          android:id="@+id/tvTitreOutilsActivity"
+          style="@style/TitreActivity"
+          android:text="@string/TitreOutils" />
+      
+       <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" >
+
+           
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" 
+                android:gravity="center">
+			 	<ImageView
+				   android:layout_width="wrap_content"
+				   android:layout_height="wrap_content"
+				   android:layout_weight="1"
+				   android:src="@drawable/im8" /> 
+	 			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:src="@drawable/im11" /> 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" 
+                android:gravity="center_vertical">		
+				<TableLayout
+				    android:layout_width="match_parent" android:layout_height="match_parent" >
+				    <TableRow
+				        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				        android:layout_weight="1" android:gravity="center">
+            				<Button
+				            android:id="@+id/buttonDictionnaire"
+				            style="@style/LinkSousActivity"
+				            android:text="@string/TitreDictionnaire" />
+				    </TableRow>
+				    <TableRow
+				        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				        android:layout_weight="1" android:gravity="center">
+           					 <Button
+				             android:id="@+id/buttonCompostelle"
+				             style="@style/LinkSousActivity"
+				             android:text="@string/TitreCompostelle" />
+				    </TableRow>
+				    <TableRow
+				        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				        android:layout_weight="1" android:gravity="center">
+				            <Button
+				            android:id="@+id/buttonTorche"
+				            style="@style/LinkSousActivity"
+				            android:text="@string/TitreTorche" />
+				    </TableRow>
+				</TableLayout>
+       		</LinearLayout>
+        </LinearLayout>
+</LinearLayout>

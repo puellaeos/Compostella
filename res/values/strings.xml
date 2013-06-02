@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Langue FR -->
+    
+    <string name="app_name">Buen Camino</string>
+    <!-- Titre des activites -->
+    <string name="TitreCompostellaMenu">Buen Camino</string>
+    
+    <string name="TitreAPropos">About Buen Camino</string>
+    <string name="TitrePreparation">Preparation</string>
+    <string name="TitrePapiers">Organise</string>
+    <string name="TitreSequiper">Get equipped</string>
+    <string name="TitreDormir">Sleep</string>
+    <string name="TitreManger">Eat</string>
+    <string name="TitreMarcher">Walk</string>
+    
+    <string name="TitreJournal">Pictures</string>
+    <string name="TitrePelerinage">Pilgrimage</string>
+    <string name="TitreHistoire">Story </string>
+    <string name="TitreChemins">Paths</string>
+    <string name="TitreMotsCles">Expressions</string>
+    
+    <string name="TitreOutils">Tools</string>
+    <string name="TitreDictionnaire">Translator</string>
+     
+    <string name="TitreCompostelle">Diary</string>    
+    <string name="TitreCompostelleNewStep">New Step</string>
+    <string name="TitreCompostelleListStep">List of steps</string>
+    <string name="TitreCompostelleStep">Step </string>
+    
+    <string name="TitreTorche">Torch</string>
+    
+    
+    <!-- Texte des activites -->
+    <string name="TexteAPropos">Version 2.1\n\nDeveloped by Aurore Chaligné\n\n share your ideas and your photos with us\n\nBuen Camino :)</string>
+    <string name="TexteTorcheCompatible">Touch screen picture to increase or decrease screen light and flash picture to switch on or off the flash </string>
+    <string name="TexteTorcheNotCompatible">Touch screen picture to increase or decrease screen light\nYour device is not compatible with torch feature</string>
+    <string name="SpinnerCategorieTitre">Categorie</string>
+    
+    <string name="TexteStepDate">Date</string>
+    <string name="TexteStepDistance">Distance</string>
+    <string name="TexteStepStart">Departure</string>
+    <string name="TexteStepEnd">Arrival</string>
+    <string name="TexteStepComment">Comment</string>    
+    <string name="TexteStepSave">Enregistrer</string>    
+    <string name="TexteStepPartager">Share</string>    
+    <string name="TexteStepModificate">Modify</string>
+    <string name="TexteStepMandatory">Date, distance, departure and arrival are mandatory fields</string>
+   
+    <string-array name="TexteManger">
+		<item >Eating and drinking are certainly the two priorities when you begin the path of Saint Jacques de Compostelle. Drinking regularly during the walk avoids dehydration, heat stroke and especially tendinitis which would force you to stop your trip. It seems obvious that to walk many kilometres, nutritious meals are recommended. Depending on budget, you can make his own food or to go to a restaurant.</item >
+		<item > Menu Pilgrim (menu del Pellegrino) often in the villages and in the cities, the restaurants offer a menu del Pellegrino (Pilgrim\'s menu) or menu del dia. These menus are available at a reasonable price between 8 and €12. For this sum, the menu contains two dishes (; el primer plato; and; secondly el plato;) are dishes of the region, a dessert and a drink. The first dish might be a soup, a salad, a plate of pasta or paella. The second dish is a dish of meat or fish often (trout or pork). The dessert can be a yogurt, a fruit or ice cream. A drink regularly chosen by the pilgrims is wine. Spanish Red wine is generally sweeter than the French red wine and is drunk easily.  So be careful not to drink too much or you will wake up with a headache!</item >
+		<item >Bocadillo is the Spanish sandwich. It may be with ham, cheese, tortilla etc. Personally, there is nothing better than a good bocadillo to feed you and provide the energy for the walk ahead and this for a reasonable price.\n\nPaella is a Spanish dish that is often found on restaurant\'s menu.  With the main ingredient of rice, this is a filling dish to eat. Contrary to what one may think, there are several kinds of paella including the Valencian paella with rice and meat and also a paella with seafood instead of meat.\n\nSoup is also found in menus such as the cold gazpacho which is ideal for drinking, or hot soups with vegetables or garlic soups that warm you in cold and wet weather.</item >
+	</string-array>
+    <string-array name="TexteDormir">
+		<item >After walking and feeding, sleeping is the most important activity, because the rest will be needed to have energy for the next day. There are several categories of housing in Spain accommodating pilgrims.</item >
+		<item >\"alberge\" are inns for pilgrims. They can be managed by the council (\"alberge municipal\" in Spanish) or privately. The price of the alberges varies between 5 and 12euros, and some alberges can also be paid by donation, which means that  price is not fixed and that the Pilgrim gives what he wants. Inns are often dormitories with bunk beds and sometimes mixed showers. Most of the alberges have a kitchen allowing you to prepare your meals and often have a washing machine and dryer (it is always possible to wash clothes by hand), and also Wi-Fi access and computers allowing you to connect to the internet. Be careful however as these services are often charged extra for.</item >
+		<item >\"Casa rural\" there is also a casa rural which correspond to \"chambre d\'hôtes\" in France or a Bed and Breaskfast in England. The price of is higher than the alberges but the accommodation is more comfortable.</item >
+		<item >Hotels\n\nIt is also possible to sleep in hotels (hostel in Spanish) but you will meet less pilgrims because this type of accommodation is certainly the most expensive of all. Personally, the housing mode that I prefer is the pilgrims inns because you often find other pilgrims and can thus share your adventure and even a meal or a glass of wine!</item >
+	</string-array>   
+	<string-array name="TexteSequiper">
+		<item > The preparation of the backpack is a key step in preparing for the path (road?) and completing the travel. Think of long and hard hours on the road with an overloaded bag. So avoid backaches from the beginning and take the minimum. On average we recommend 7 to 9 kg for a woman and for a man, up to 12 kg although this depends on the strength of the individual. Don\'t worry if you  have too much though as you can always send your belongings back home via the Post office.</item >
+		<item >To give an idea here is what I took: 3 T-shirts (2 are sufficient), 1 pair of trousers and 1 pair of shorts, 3 pairs of socks (2 are sufficient), 2 sets of underwear, 1 pair of trail shoes (lighter than hiking shoes as there is little mountain to climb), 1 pair of tong, leisure shoes for the afternoon, 1 towel, 1 sleeping bag (1 sheet of silk just in the summer and it is lighter), 1 Cape (used 1 time and proved to be very useful), 1 night clothes, 1 fleece (even in the summer, a fleece is necessary when one leaves at 6: 30 and it is still night), 1 hat, 1 pair of sunglasses, 1  bottle of water(1L) , 1 headlamp, 1 pair of trekking poles, toiletries bag (hair, teeth, tooth brush, sun cream, tweezers, razor, shaving, deodorant oil, shampoo/shower gel, liquid for washing clothes by hand, a first aid kit (double dressing skin against the bulbs (to not quote the brand), antiseptic, thread and sewing needle, safety pin, after sun cream, nail clippers); other (clothes pin, wire cloth, block notes, pencil, mobile). a few plastic bags for storing wet clothes, food, Eating and sleeping (reference guidebooks without wanting to make pub!) However, if you do the way in mid season it will be necessary to take some warmer clothes and gaiters for rain.</item >
+	</string-array>
+    <string-array name="TexteMarcher">
+      	<item >Why doing it?\n\nFor centuries, the walkers of Santiago were God walkers, i.e. pilgrims who walked the road to Santiago to do penance in remission of their sins. Today, a large number of people who are on their way to the Holy City do so for religious reasons.  Walkers of Santiago consider the journey as a step in their lives, a time to devote to themselves to relax and have time to think. In fact, many findithat the Camino de Santiago is much more that a simple step of hiking on pilgrimage.</item>
+		<item >When shloud I go ?\n\nIt was during the season you can enjoy best conditions for a pilgrimage: attendance less strong than in high season and milder weather will be your allies. For example, you can go in the spring or mid August. Be more aware that the average hiker covers 3 to 4 km in an hour and that a daily walk takes  4\-5 hours: you must evaluate your pilgrimage period depending on the path you have chosen. But do not forget not to calculate and to be along carried by road.</item>
+		<item >Where should I come from ?\n\nThere is no rule on the departure for the path point. You can start where you want ! For example, some pilgrims with a path pass near them, take their House as a starting point, others join points of more or less official departure from the path, such as le Puy en Velay or St. Jean de Pied de Port. Nonetheless, to officially validate the path and receive the Compostella, you must cover the last 100 kilometres on foot or the last 200 km on bikes to the town of Compostela.</item>
+		<item >Should I go alone or in group ?\n\nOn the way there are many single walkers (man or woman). However, you are never isolated on the way (even if what you want to be). At each step, you meet old or new faces and one feels never lost. You can meet people with whom you will be able to walk at the same speed and see the landscape together but it is not a requirement: everyone respects the speed of the other, and we can always meet in the afternoon to enjoy a drink and eat. Going in a group assures us of company during the trip but it will have to pay attention to the pace and way of life of each on the meals, nap-time schedules, walking speed. After all it must remain a pleasure for everyone to walk along the path. Whither you are alone or with others walking on the way!</item>
+	</string-array>
+    <string-array name="TextePapiers">
+        <item >ID papers\n\nAs a traveler, whether you are Spanish or an other nationalities,you have to carry with you a document proving your identity (proof of identity or passport). For EU nationals proof of identification is sufficient and preferable because it is lighter to carry than a passport. This document you will be asked at least in inns that note your identity card number.</item>
+		<item >The European Health Insurance Card\n\nFor EU citizens there is the free European Health Insurance Card. It allows anyone who is insured by or covered by a statutory social security scheme of the EEA countries and Switzerland to receive medical treatment in another member state for free or at a reduced cost, if that treatment becomes necessary during their visit. It only covers healthcare which is normally covered by a statutory health care system in the visited country, so it does not render travel insurance obsolete.</item>
+		<item >Credential\n\nThe credentiale is a certification to authenticate the Pilgrim. It is issued by the societies (secular credentiale) or the Church (religious credentiale). This paper is required for access to the Spanish inns, since some hostels will accept only the holders of the credentiale pilgrims. However, it is little applied in France. It is necessary to present his credentiale supplemented by signying of the passage of the Pilgrim throughout his journey. It is possible to obtain stamps from hostels of pilgrims but also some churches, stores and even restaurants. On the other hand, it is still a pleasure to see his credentiale to fill buffers throughout the trip and thus show or remember his way.</item>
+    </string-array>
+    <string-array name="TexteHistoire">
+       	<item > The pilgrimage to Santiago de Compostela is a Catholic pilgrimage, whose goal is to achieve the legendary tomb of the Apostle Saint James the greater, located in the crypt of the Cathedral of Saint-Jacques-de-Compostelle in Galicia (Spain). Saint-Jacques-de-Compostelle paths which correspond to several routes in Spain and France, have been declared in 1987 first cultural route by the Council of Europe.</item>
+		<item >Brother of Saint John, called by Jesus while he was fishing in the waters of Tiberias, Santiago evangelized Spain before being martyred and beheaded in Jerusalem under the command of King Hérode, in 44 ad. His body was delivered in food to the dogs, before being collected by his companions. They placed his body in a boat that came aground in Padrón, on the coast of Galicia. Guided by an Angel, she had sailed across the Mediterranean and crossed the Strait of Gibraltar.</item>
+		<item >Around the year 800, near the Spanish coast the tomb of Santiago was discovered by the hermit Pelagius, who, in a dream, had a vision of the tomb of Saint James. He was guided by a star to a field (the field of the star, or campus stellae in latin), that would become Compostela. However, at this time,  Spain was embroiled in invasions by the Moors. Religion played a decisive role. Alfonso II, sovereign of the Kingdom of Galicia, had the idea of a reconquest of territory and built a church in Santiago. The pilgrims were soon pouring in, attracted by the legend of Saint-Jacques. Compostela became one of the symbols of the Reconquista, and Santiago took the nickname of matamore, the killer of Moors. The pilgrimage to Compostela started around the 11th century and was a great pilgrimage in medieval Christendom. But it was only in 1492 that the Pope Alexandre VI officially declared Santiago de Compostela one of the three great pilgrimages of Christendom, with Jerusalem and Rome. From the 15th century, conflicts of interest and religious decline saw low attendance along the paths of Compostela; the pilgrimage  popularity resumed in the 20th century. Now, despite the decrease in the religious sentiment, believers and atheists go on the ever-growing path.</item>
+    </string-array>
+    <string-array name="TexteChemins">
+        <item >There are multiple paths leading to the Cathedral of Santiago de Compostela in Spain \nthe Camino Francés (French road), the departure of Saint-Jean-foot-de-Port/Roncesvalles/Puente la Reina, depending on whether one includes or not the Camino navarro and the French party. \n The Camino del norte (coastal said northern route), which runs along all the Cantabrian coast since the basque country. \n The Camino Inglés (English road), which begins in the Ferrol or a Coruña port of landing of the English pilgrims arriving by ship and continuing their pilgrimage on foot. \nThe Camino portugues (Portuguese Road), which includes several routes, one via the coast via the province of Pontevedra, and another from the inside via the province of Ourense, which merges to Ourense with the Vía de la Plata. \nThe Vía de la Plata (Silver Route), which comes from Andalusia, takes several names following ramifications that either lead to the Camino frances, either enter the province of Ourense in Galicia and join the Portuguese path of the Interior.</item>        
+		<item >In France, there are also several points of departure for the road: \nthe via Turonensis, passing through Paris and Tours. This path joins the Spain by Saint-Jean-Pied-de-Port. There is talk of way of Paris. \nThe via Terraced, which passes through Limoges, hence its name. the sanctuary was Vézelay. This path joins the Spain by Saint-Jean-Pied-de-Port. There is talk of Vézelay path. \nThe via Podiensis, which takes its name from le Puy-en-Velay. This road is signposted as GR 65. This path joins the Spain by Saint-Jean-Pied-de-Port. There is talk of Chemin du Puy. Le Puy-en-Velay, told the Santiago. \nThe via Tolosana, passing through Toulouse, hence its name. but it is also called via Arletanensis, the sanctuary of Arles. This path joins the Spain through Somport pass. There is talk of way of Arles.</item>
+    </string-array>
+    <string-array name="TexteMotsCles">
+        <item >Buen camino\n\nIt means in Spanish good way, is a bit like the Hello between Pilgrim. This expression is that you will hear more on the way, either from a pilgrim or even local.</item>
+		<item >Credentiale\n\nThe term Credentiale comes from credenza, which means trust; It is book of the Pilgrim, a certification issued to authenticate its spiritual motivation; It establishes a climate of goodwill between licensors that make stamp at every stage. This card is required for access to the Spanish inns. You can obtain the Credentiale with the associations of the friends of Saint James before leaving. Conditions of delivery and the rates are variable.</item>
+		<item >Compostella\n\nIf you walk the last 100 km of the road (or bike 200 at least) and  your stamp on the Credentiale confirm it, it deliver the Compostela, an official certificate attesting your pilgrimage.</item>
+		<item >Ultreya\n\nAs some pilgrims say: ULTREYA. This means: go further, go above. It is the expression of surpass yourself physically or mentally. You will discover that this phrase makes sense on the way.</item>
+        
+    </string-array>
+    <string-array name="SpinnerLangueItem">
+        <item >English</item>
+        <item >French</item>
+        <item >Spanish</item>
+        <item >German</item>
+        <item >Italian</item>
+    </string-array>
+    <string-array name="SpinnerCategorie">
+        <item >Food</item>
+        <item >Discuss</item>
+        <item >Place</item>
+        <item >Move</item>
+    </string-array>    
+</resources>

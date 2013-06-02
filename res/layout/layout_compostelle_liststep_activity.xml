@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutActivity"> 
+
+    <TextView
+        android:id="@+id/tvTitreCompostelleListActivity"
+        style="@style/TitreActivity"
+        android:text="@string/TitreCompostelleListStep"/>
+    
+    
+    <TextView
+        android:id="@+id/tvDistanceTotalCompostelleListActivity"
+		style = "@style/TexteSimple"
+        android:layout_gravity="right"
+        android:text="TextView" />
+    <ListView
+        android:id="@+id/lvListStep"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    android:cacheColorHint="@android:color/transparent"
+	    android:divider="@color/BrownDark"
+	    android:dividerHeight="1dp">
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Blanc">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Orange1">#FF9900</color>
+    <color name="Bleu1">#000099</color>
+    <color name="Orange2">#FFB807</color>
+    <color name="Bleu2">#0000FF</color>
+    <color name="BrownDark">#89501D</color>
+    <color name="Marron">#731B26</color>
+    <color name="MarronClair">#8C5935</color>
+
+</resources>

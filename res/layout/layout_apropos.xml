@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutActivity"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitreAProposActivity"
+       style="@style/TitreActivity"
+        android:text="@string/TitreAPropos" />
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        android:orientation="vertical"
+	        android:gravity="center">
+	    <TextView
+	        android:id="@+id/tvTexteAProposActivity"
+	       	style="@style/TexteSimple"
+	        android:text="@string/TexteAPropos"
+	        android:gravity="center" />
+		</LinearLayout>
+</LinearLayout>

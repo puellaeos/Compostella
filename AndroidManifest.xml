@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.achal.compostella"
+    android:versionCode="6"
+    android:versionName="4.0" 
+    android:installLocation="auto">
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.CAMERA"/> 
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    
+
+    <application android:icon="@drawable/logo" android:label="@string/app_name" 
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name=".DictionnaireActivity"></activity>
+        <activity android:name=".PelerinageActivity"></activity>
+        <activity android:name=".PreparationActivity"></activity>
+        <activity android:name=".CompostelleActivity"></activity>
+        <activity android:name=".JournalActivity"></activity>
+        <activity android:name=".OutilsActivity"></activity>
+        <activity android:name=".CompostelaMenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        <activity android:name=".TorcheActivity"></activity>
+        <activity android:name=".PageActivity"></activity>
+        <activity android:name=".CompostelleNewStepActivity"></activity>
+        <activity android:name=".CompostelleListStepActivity"></activity>
+        <activity android:name=".CompostelleStepActivity"></activity>
+        <activity android:name="AProposActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutActivity"> 
+    
+     <TextView
+        android:id="@+id/textViewTitreCompostellaMenu" 
+        style="@style/TitreActivity"
+        android:text="@string/TitreCompostellaMenu"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent" 
+            android:layout_height="0dp" 
+            android:layout_weight="1" 
+            android:gravity="center">   
+                 <TableRow
+                     android:layout_width="0dp" android:layout_height="match_parent" 
+                     android:layout_weight="1" android:gravity="center">
+	                   <Button
+			              android:id="@+id/ButtonPreparation"
+			              style="@style/LinkSousActivity"
+			              android:text="@string/TitrePreparation" />
+                   </TableRow>
+                   <TableRow
+                         android:layout_width="0dp"  android:layout_height="match_parent"
+                     	android:layout_weight="1" android:gravity="center" >
+			          <Button
+			              android:id="@+id/ButtonPelerinage"
+			              style="@style/LinkSousActivity"
+			              android:text="@string/TitrePelerinage" /> 
+                   </TableRow>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center" 
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                 <ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+					android:layout_margin="10dp"
+	                android:adjustViewBounds="true"
+	                android:scaleType="centerInside"
+	                android:src="@drawable/im1" />
+            </LinearLayout>        
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            android:layout_weight="1"
+            android:gravity="center">
+           <TableRow
+                     android:id="@+id/tableRow6"
+                     android:layout_width="0dp" android:layout_height="match_parent" 
+                     android:layout_weight="1" android:gravity="center">
+
+					  <Button
+		              android:id="@+id/ButtonOutils"
+		              style="@style/LinkSousActivity"
+		              android:text="@string/TitreOutils" />
+		</TableRow>
+		<TableRow
+                     android:id="@+id/tableRow7"
+                     android:layout_width="0dp" android:layout_height="match_parent" 
+                     android:layout_weight="1" android:gravity="center">
+		          <Button
+		              android:id="@+id/ButtonJournal"
+		              android:text="@string/TitreJournal"
+					  style="@style/LinkSousActivity"/>		
+        </TableRow>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

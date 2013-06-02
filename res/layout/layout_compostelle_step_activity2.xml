@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutActivity"> 
+
+  
+    <TextView
+        android:id="@+id/tvTitreCompostelleStepActivity"
+        style="@style/TitreActivity"
+        android:text="@string/TitreCompostelleStep" />
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            
+            <TextView
+	            android:id="@+id/tvDateTitreCompostelleStepActivity"
+	            style="@style/TexteSimple"
+	            android:gravity="left"
+	            android:text="@string/TexteStepDate" />
+ 			<TextView
+	            android:id="@+id/tvDateCompostelleStepActivity"
+	            style="@style/TexteSimpleClair"
+	            android:gravity="left"
+	            android:text="date..." />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+	            android:id="@+id/tvDistanceTitreCompostelleStepActivity"
+	            style="@style/TexteSimple"
+	            android:layout_gravity="right" 
+	            android:text="@string/TexteStepDistance" />
+             <TextView
+	            android:id="@+id/tvDistanceCompostelleStepActivity"
+	            style="@style/TexteSimpleClair"
+	            android:layout_gravity="right" 
+	            android:text="distance..." />
+            
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+        <TextView 
+            android:id="@+id/tvStartTitreCompostelleStepActivity"
+            style="@style/TexteSimple"
+            android:text="@string/TexteStepStart" />
+       
+        <TextView
+            android:id="@+id/tvStartCompostelleStepActivity"
+            style="@style/TexteSimpleClair"
+            android:layout_marginLeft="5dp"
+            android:text="start..." />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+        
+        <TextView 
+            android:id="@+id/tvEndTitreCompostelleStepActivity"
+            style="@style/TexteSimple"
+            android:text="@string/TexteStepEnd" />        
+        <TextView
+            android:id="@+id/tvEndCompostelleStepActivity"
+            style="@style/TexteSimpleClair"
+            android:layout_marginLeft="5dp"
+            android:text="end..." />
+        </LinearLayout>
+   </LinearLayout>
+   
+  		<TextView 
+	        android:id="@+id/tvCommentTitreCompostelleStepActivity"
+            style="@style/TexteSimple"
+            android:text="@string/TexteStepComment" />
+        
+  <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvStartCompostelleStepActivity"
+            android:layout_toLeftOf="@+id/tvDistanceCompostelleStepActivity" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+             	<TextView
+	            android:id="@+id/tvCommentCompostelleStepActivity"
+	            style="@style/TexteSimpleClair"
+	            android:text="comment..." />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+                <Button
+		            android:id="@+id/bPublishCompostelleStepActivity"
+					style="@style/LinkSousActivity"
+		            android:text="@string/TexteStepPartager"
+		            /> 
+		        <Button
+		            android:id="@+id/bModificateCompostelleStepActivity"
+		            style="@style/LinkSousActivity"
+		            android:text="@string/TexteStepModificate" /> 
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+</LinearLayout>

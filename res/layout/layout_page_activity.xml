@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutButtonsPageActivity"
+        android:layout_width="match_parent"  android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center">
+        <ImageButton
+            android:id="@+id/ibPreviousPageActivity"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"  android:background="@android:color/transparent"
+            android:src="@drawable/previous" android:layout_weight="1" /> 
+        <TextView
+            android:id="@+id/tvTitrePageActivity"
+			style="@style/TitrePageActivity"/>
+        <ImageButton
+            android:id="@+id/ibNextPageActivity"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:gravity="bottom|right" android:layout_weight="1" 
+            android:background="@android:color/transparent" android:src="@drawable/next"   /> 
+    </LinearLayout>
+	
+	
+	<LinearLayout
+	       android:id="@+id/layoutTextPage"
+	       android:layout_width="match_parent" android:layout_height="wrap_content"
+	       android:layout_gravity="center"  
+	       android:layout_below="@id/layoutButtonsPageActivity" 
+	       android:layout_above="@+id/progressBarLecturePage">    
+		    <ScrollView
+		        android:layout_width="match_parent" android:layout_height="wrap_content"
+		        android:id="@+id/scrollviewTextPage" >
+                 <TextView
+                     android:id="@+id/tvTextePageActivity"
+                     style="@style/TextePageActivity" android:paddingBottom="10dp"
+                     android:layout_width="match_parent"  android:layout_height="wrap_content" />
+             </ScrollView>
+   </LinearLayout> 
+
+   <ProgressBar
+          android:id="@+id/progressBarLecturePage"
+          style="@style/ProgressBarLecturePage"
+          android:layout_width="match_parent"  android:layout_height="wrap_content"  
+          android:layout_alignParentBottom="true" android:padding="10dp"/>
+		     
+		     
+</RelativeLayout>

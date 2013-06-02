@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ibPreviousPageActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:background="@android:color/transparent"
+            android:src="@drawable/previous" android:layout_weight="1" /> 
+
+        <TextView
+            android:id="@+id/tvTitrePageActivity"
+			style="@style/TitrePageActivity"/>
+
+        <ImageButton
+            android:id="@+id/ibNextPageActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|right"
+            android:background="@android:color/transparent"
+            android:src="@drawable/next" 
+            android:layout_weight="1" /> 
+    </LinearLayout>
+    
+
+ <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+         <LinearLayout
+            android:id="@+id/layoutTextPage"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="center"  android:padding="5dp"
+            android:layout_alignParentTop="true"  >
+
+             <ScrollView
+                 android:layout_width="match_parent" android:layout_height="wrap_content" 
+                 android:layout_above="@+id/layoutProgressBarLecturePage">
+
+                 <TextView
+                     android:id="@+id/tvTextePageActivity"
+                     style="@style/TextePageActivity"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" />
+             </ScrollView>
+  
+         </LinearLayout> 
+
+	     <LinearLayout
+	         android:id="@+id/layoutProgressBarLecturePage"	            
+	         android:layout_width="match_parent" android:layout_height="wrap_content"
+	         android:layout_alignParentBottom="true" >
+	     
+		     <ProgressBar
+	            android:id="@+id/progressBarLecturePage"
+	            style="@style/ProgressBarLecturePage"
+	            android:layout_width="match_parent"  android:layout_height="wrap_content" />
+	           <!--   android:layout_alignParentBottom="true" />-->
+		     
+		     </LinearLayout>
+            
+        </RelativeLayout>
+</LinearLayout>

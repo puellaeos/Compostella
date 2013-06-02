@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Langue FR -->
+    
+    <string name="app_name">Buen Camino</string>
+    <!-- Titre des activites -->
+    <string name="TitreCompostellaMenu">Buen Camino</string>
+    
+    <string name="TitreAPropos">A Propos</string>
+    <string name="TitrePreparation">La préparation</string>
+    <string name="TitrePapiers">S\'organiser</string>
+    <string name="TitreSequiper">S\'equiper</string>
+    <string name="TitreDormir">Dormir</string>
+    <string name="TitreManger">Se Restaurer</string>
+    <string name="TitreMarcher">Marcher</string>
+    
+    <string name="TitreJournal">Des Photos</string>
+    <string name="TitrePelerinage">Le pelerinage</string>
+    <string name="TitreHistoire">L\'histoire </string>
+    <string name="TitreChemins">Les chemins</string>
+    <string name="TitreMotsCles">Les expressions </string>
+    
+    <string name="TitreOutils">Les Outils</string>
+    <string name="TitreDictionnaire">Traducteur</string>
+     
+    <string name="TitreCompostelle">Carnet de voyage</string>    
+    <string name="TitreCompostelleNewStep">Créer une nouvelle Etape</string>
+    <string name="TitreCompostelleListStep">Voir mon chemin</string>
+    <string name="TitreCompostelleStep">Etape </string>
+    
+    <string name="TitreTorche">Torche</string>
+    
+    
+    <!-- Texte des activites -->
+    <string name="TexteAPropos">Version 2.1\n\nDéveloppé par Aurore Chaligné\n\n Pour continuer de faire vivre cette application, n\'hésite pas à me contacter pour me faire part de tes idées ou de tes photos\n\nBuen Camino ;)</string>
+    <string name="TexteTorcheCompatible">Toucher l\'image de l\'écran pour éclairer davantage l\'écran ou le flash pour allumer ou éteindre le flash</string>
+    <string name="TexteTorcheNotCompatible">Toucher l\'image de l\'écran pour éclairer davantage l\'écran \nVotre appareil n\'est pas compatible avec la fonctionnalité torche</string>
+    <string name="SpinnerCategorieTitre">Categorie</string> 
+    
+    <string name="TexteStepDate">Date</string>
+    <string name="TexteStepDistance">Distance</string>
+    <string name="TexteStepStart">Départ</string>
+    <string name="TexteStepEnd">Arrivée</string>
+    <string name="TexteStepComment">Commentaire</string>    
+    <string name="TexteStepSave">Enregistrer</string>    
+    <string name="TexteStepPartager">Partager</string>    
+    <string name="TexteStepModificate">Modifier</string>
+    <string name="TexteStepMandatory">Les champs date, distance, départ et arrivée sont des champs obligatoires </string>
+   
+	<string-array name="TexteManger">
+		<item >Manger et boire sont certainement les deux priorités lorsque l\'on entame le chemin de Saint Jacques de Compostelle. Boire régulièrement pendant la marche évite la déshydratation, les coups de chaleur et surtout les tendinites qui te forceraient à arrêter ton voyage. Il parait évident que pour marcher tant de kilomètres, de bons repas nourrissants sont recommandés. Selon les budgets, il est possible de faire ses propres plats ou d\'aller au restaurant.\nCe qui suit est essentiellement valable sur la partie espagnole.</item>
+		<item >Menu pèlerin (menu del pelegrino) \n\nSouvent dans les villages et dans les villes, les restaurants proposent un \’menu del pelegrino\’ (menu du pèlerin) ou \’menu del dia\’. Ces menus sont proposés à un prix raisonnable compris entre 8 et 12 €. Pour cette somme, le menu contient deux plats (\'el primer plato\', et \'el secundo plato\') qui sont des plats de la carte, un dessert et une boisson. Le premier plat peut être une soupe, une salade, une assiette de pates ou de paella. Le second plat est une assiette de viande ou de poisson (souvent de la truite ou du porc). Le dessert peut être un yaourt, un fruit ou bien une glace. La boisson choisie régulièrement par les pèlerins est du vin. Le vin rouge espagnol est en général plus sucré que le vin rouge français et se boit facilement. Alors faites attention de ne pas trop boire sinon le mal de tête attendra au réveil !</item>
+		<item >Les Plats\n\nLe bocadillo est le sandwich espagnol. Il peut être au jambon, au fromage, à la tortilla de pomme de terre etc... Personnellement, il n\'y a rien de mieux qu\'un bon bocadillo pour se nourrir et donner des forces pour le chemin et ceci pour un prix raisonnable.\n\nLa paella est un plat symbole de l\'Espagne qui se retrouve souvent sur les cartes des restaurants.  A base de riz, ce plat est suffisamment consistant pour se restaurer. Contrairement à ce que l\'on pense, il existe plusieurs sorte de paella  la première est la paella valencienne à base de riz et de viande. Il existe également une paella avec des fruits de mer à la place de la viande.\n\nOn retrouve aussi dans les cartes des soupes froides comme le gaspacho idéal pour se désaltérer ou des soupes chaudes aux légumes ou à l\'ail qui réchauffent par temps froid et humide.</item>
+	</string-array>
+    <string-array name="TexteDormir">
+      	<item >Après marcher et se nourrir, dormir sera l\'activité la plus importante car le repos sera source de remise en forme pour repartir le lendemain. Il existe plusieurs catégories de logements en Espagne pouvant accueillir des pèlerins. Voici quelques conseils pour dormir en Espagne.</item>
+		<item >L\'alberge\n\nLes alberges sont des auberges réservées aux pèlerins. Elles peuvent être gérées par les communes (alberge municipale en espagnol) ou être des alberges privées. Le prix des alberges varie entre 5 et 12€, et certaines alberges peuvent aussi être payées par donativo, ce qui signifie que le prix n\'est pas fixé et que le pèlerin donne ce qu\'il veut. Les alberges sont souvent des dortoirs avec des lits superposés et des douches parfois mixtes. La plupart des alberges disposent de cuisine te permettant de cuisiner vos repas et pour certaines de lave-linge et sèche-linge (il est toujours possible de laver les vêtements à la main), mais aussi d\'accès wifi et ordinateurs te permettant de te connecter à internet. Attention toutefois, ces services demeurent souvent payant.</item>
+		<item >La casa rurale\n\nIl y a aussi des casa rurales qui correspondent à des chambres d\'hôtes en France ou encore des Bed and Breakfast anglais. Le prix du logement est plus élevé que les alberges mais le logement est plus confortable</item>
+		<item >L\'hôtel\n\nIl est également possible de se loger dans des hôtels (hostel en espagnol) mais tu rencontreras moins de pèlerins car ce type de logement certainement est le plus cher de tous. Personnellement, le mode de logement que je préfère est l\'alberge car tu retrouves souvent des connaissances du chemin et ainsi partages ton aventure voire même un repas ou un verre de vin ;)</item>
+	</string-array>   
+	<string-array name="TexteSequiper">
+		<item >La préparation du sac à dos est une étape clé dans la préparation au chemin et dans l\'optique de l\'aboutissement de du voyage. Pense aux heures longues et pénibles sur la route avec un sac surchargé. Autant éviter les maux de dos dès le début et penser pratique en prenant le strict minimum. En moyenne on conseille 7 à 9 kg pour une femme et pour un homme jusqu\'à 12kg, bien que cela dépende de la force de chacun. Mais ne t\'inquiète pas si tu as des objets en trop tu pourras toujours t\'en délester en cours de route en renvoyant tes affaires chez toi par la poste ;)</item>
+		<item >Pour donner une idée voici ce que j\'ai emporté :\n3 T-shirts (2 suffit)\n1 pantalon/short et 1 bermuda\n3 paires de chaussette (2 suffit)\n2 ensemble de sous-vêtements\n1 paire de chaussure de type trail (plus légère que les chaussures de randonnée et il y a peu de montagne pour justifier le fait d\'en prendre)\n1 paire de tong, chaussures de repos pour l\'après-midi\n1 serviette\n1 sac de couchage (1 drap de soie suffit en été et c\'est plus léger)\n1 pèlerine (utilisée 1 fois et s\'est avéré très utile )\n1tenue de nuit qui servait de pyjama\n1 polaire (même en été, la polaire est nécessaire lorsque l\'on part à 6h30 et qu\'il fait encore nuit)\n1 chapeau\n1 paire de lunette\n1 poche à eau(1L)\n1 lampe frontale\n1 paire de batons de randonnée\n1  trousse de toilette ( brosse à cheveux, dents, dentifrice, crème solaire protectrice, pince à épiler, rasoir, huile de rasage, déodorant, gel douche/shampoing, liquide pour laver un vêtement à la main)\n1 trousse de secours (pansement double peau contre les ampoules(pour ne pas citer la marque), antiseptique, fil et aiguille de couture, épingle à nourrice, crème après soleil, coupe-ongle)\nAutres (pince à  linge, fil pour étendre le linge, bloc note, crayon, mobile)\nQuelques sacs plastiques pour ranger les vêtements humides, la nourriture...\n1 guide qui référence les services proposés sur le Chemin (ex : le miam miam dodo sans vouloir faire de pub!)\nCependant, si tu fais le chemin à mi saison il sera nécessaire de prendre quelques vêtements plus chauds ainsi que des guêtres pour la pluie.\n</item>
+	</string-array>
+    <string-array name="TexteMarcher">
+        <item >Pourquoi faire le chemin\n\nDurant des siècles, les marcheurs de Compostelle étaient des \’marcheurs de Dieu\’, c\'est-à-dire des pèlerins qui faisaient route, à pied, pour Santiago et faire pénitence en rémission de leurs péchés. Aujourd\’hui encore  un grand nombre de personnes le font pour des motifs religieux bien que le peu le fasse pour expier leur fautes. Les marcheurs de Saint-Jacques considèrent le cheminement comme une étape dans leur vie, un moment qu\'il consacre à eux-mêmes pour se ressourcer par une pause intelligente et constructive. En fait beaucoup se retrouvent dans cette constatation que le chemin de Saint-Jacques dépasse de beaucoup la simple marche de randonnée.</item>
+        <item >A quelle date partir ?\n\nChacun est libre de partir à la période qu’il souhaite mais selon ton parcours les périodes d’affluences peuvent varier. En France la période d’affluence la plus forte démarre en avril et se termine en juin.\nEn Espagne c\'est pendant la demi-saison que tu profiteras des meilleurs conditions pour un pèlerinage : affluence moins forte qu\'en haute saison et temps plus doux seront tes alliés ; comme par exemple partir au printemps ou à la mi-août. \nSaches de plus que le randonneur moyen parcourt 3 à 4 km en une heure, et qu\'une étape quotidienne représente une marche de 4 à 5 heures : la durée du pèlerinage s\'évalue en fonction du parcours choisi. Mais n\'oublies pas de ne pas trop calculer et de te laisser porter par le chemin</item>
+		<item >D\'où peut-on partir?\n\nIl n\'y a pas de règle concernant le point départ pour le chemin. Tu peux partir d\'où tu veux ! Par exemple, certains pèlerins dont le chemin passent près de chez eux, prennent leur maison comme point de départ, d\'autres rejoignent des points de départ plus ou moins officiel du chemin, tel que le Puy en Velay ou St Jean de Pied de Port. Néanmoins, pour valider officiellement le chemin et recevoir la Compostela il faut avoir parcouru les 100 derniers kilomètres à pied ou les 200 derniers km à vélos jusqu\'à la ville de Compostelle.</item>
+		<item >Faut-il partir seul ou en groupe ?\n\nSur le chemin on rencontre de nombreuses personne seules (homme ou femme). Malgré tout, nous ne sommes jamais isolé sur le chemin (sauf si c\'est ce que l\'on souhaite). A chaque étape, on croise d\'anciens ou de nouveaux visages et  l\'on ne se sent jamais perdu. Tu peux rencontrer des personnes avec qui tu pourras marcher à la même vitesse et ainsi profiter ensemble du paysage mais ce n\'est pas une obligation : chacun respecte la vitesse de marche de l\'autre, et on peut toujours se retrouver dans l\'après-midi pour prendre un verre et manger. A première vue partir en groupe nous assure de rester accompagné pendant le voyage. Mais il faudra faire attention au rythme et façon de vivre de chacun que ce soit sur les horaires du repas, de la sieste, de la vitesse de marche. Après tout cela doit rester un plaisir pour chacun que de marcher sur le chemin :)\nAlors que tu sois seul ou accompagné viens sur le chemin marcher !</item>
+	</string-array>
+    <string-array name="TextePapiers">
+        <item >Les papiers d\'identité\n\nEn tant que voyageur, d\'origine espagnol ou autre nationalité, il est obligatoire de porter toujours sur soi, tout document justifiant de votre identité (pièce d\'identité ou passeport). Pour les ressortissants de l\'UE une pièce d\'identité est suffisante et préférable car elle est plus légère à transporter. Ce document te sera demandé au moins dans les auberges qui note le numéro de la carte d\'identité.</item>
+		<item >La carte d\'assurance maladie\n\nPour les ressortissants européens il existe une carte d\'assurance maladie européenne gratuite qui permet d\'avoir le remboursement des soins en France et en Espagne en cas de maladie. Cette carte doit être demandée auprès de la caisse dont vous dépendez pour l\'assurance maladie dans votre pays.</item>
+		<item >la Crédentiale\n\nLa crédentiale est une accréditation pour authentifier le pèlerin. Elle est délivrée par des associations jacquaires (crédentiale laïque) ou par l\'église(crédentiale religieuse). Ce papier est indispensable pour l\'accès aux gîtes espagnols, puisque certaines auberges n\'acceptent que les pèlerins détenteurs de la crédentiale. Il est recommandé de présenter sa crédentiale complétée par des tampons signe du passage du pèlerin tout au long de son périple, bien qu’elle soit peu demandée en France. Il est possible d\'obtenir des tampons auprès des auberges de pèlerins mais aussi certaines églises, boutiques et même restaurants. Par ailleurs, c\'est toujours un plaisir de voir sa crédentiale se remplir de tampons tout au long du voyage et ainsi montrer ou se remémorer son chemin. \nLes tampons sur la crédentiale sont un des prérequis pour obtenir la Compostela. Il faut en effet deux tampons par jour pour valider la distance minimale à parcourir: 100km à pied ou 200km à vélo.</item>
+    </string-array>
+    <string-array name="TexteHistoire">
+        <item >Le pèlerinage de Saint-Jacques-de-Compostelle est à l\'origine un pèlerinage catholique, dont le but est d\'atteindre le tombeau légendaire de l\'apôtre saint Jacques le Majeur, situé dans la crypte de la cathédrale de Saint-Jacques-de-Compostelle en Galice (Espagne).\n\nLes chemins de Saint-Jacques-de-Compostelle, qui correspondent à plusieurs itinéraires en Espagne et en France, ont été déclarés en 1987 \&quot; Premier itinéraire culturel\&quot; par le Conseil de l\'Europe.</item>
+        <item >Frère de Saint-Jean, appelé par Jésus alors qu\'il était en train de pêcher dans les eaux de Tibériade, Saint-Jacques évangélisa l\'Espagne avant d\'être martyrisé et décapité à Jérusalem sous les ordres du roi Hérode, vers 44 après Jésus-Christ. Son corps fut livré en pâture aux chiens, avant d\'être recueilli par ses compagnons. Ceux-ci placèrent sa dépouille dans une embarcation, qui vint s\'échouer à Padron, sur les côtes de Galice. Guidée par un ange, elle avait navigué à travers la Méditerranée et franchi le détroit de Gibraltar.</item>
+        <item >Aux environs de l\'an 800, on découvre au large des côtes espagnoles le sépulcre de Saint-Jacques.\nC\'est l\'ermite Pelagius qui, en rêve, eut une vision du tombeau de Saint-Jacques. Il est guidé par une étoile vers un champ (le champ de l\'étoile, soit \&quot;campus stellae\&quot; en latin), qui deviendra Compostelle. Or, à cette époque, l\'Espagne est en proie aux invasions des Maures. La religion y jouera un rôle décisif. Alphonse II souverain du royaume de Galice a l\'idée d\'une reconquête du territoire et fait ériger une église à Compostelle, et les pèlerins ne tardent pas à affluer, attirés par la légende de Saint-Jacques. Compostelle devient un des symboles de la Reconquista, et Saint-Jacques prend le surnom de \&quot;matamore\&quot;, le tueur de Maures.\nLe pèlerinage de Compostelle devient à partir du XIe siècle un grand pèlerinage de la Chrétienté médiévale. Mais c\'est seulement en 1492, que le pape Alexandre VI déclare officiellement Saint-Jacques de Compostelle lieu d\'un des \&quot;trois grands pèlerinages de la Chrétienté\&quot;, avec ceux de Jérusalem et de Rome.\nA partir du XVème siècle, les conflits d\'intérêt et religieux diminuent la fréquentation des Chemins de Compostelle ; le pèlerinage ne reprendra qu\'au XXe siècle. Désormais, malgré la diminution du sentiment religieux, croyants et athées partent sur le chemin toujours plus nombreux.</item>
+    </string-array>
+    <string-array name="TexteChemins">
+        <item >Il existe en Espagne plus chemin pour se rendre à la cathédrale de Saint-Jacques-de-Compostelle\n\nLe Camino francés (Chemin français), au départ de Saint-Jean-Pied-de-Port/Roncevaux/Puente la Reina, selon que l\'on y inclut ou pas le Camino navarro et la partie française.\n\nLe Camino del norte (Chemin du Nord dit côtier), qui longe toute la côte cantabrique depuis le Pays basque.\n\n\nLe Camino inglés (Chemin anglais), qui commence au Ferrol ou à La Corogne, port de débarquement des pèlerins anglais arrivant par bateau et poursuivant leur pèlerinage à pied.\nLe Camino portugués (Chemin portugais), qui comprend plusieurs itinéraires, l\'un par la côte via la province de Pontevedra, et un autre de l\'intérieur via la province d\'Ourense, qui se confond à Ourense avec la vía de la Plata.\n\nLa Vía de la Plata (Route de l\'argent), qui vient d\'Andalousie, prend plusieurs noms suivant des ramifications qui, soit mènent au Camino francés, soit entrent en Galice par la province d\'Ourense et rejoignent le Chemin portugais de l\'intérieur.</item>        
+		<item >En France, il existe aussi plusieurs points de départ pour le chemin:\n\nLa via Turonensis, qui passe par Paris et Tours. Ce chemin rejoint l\'Espagne par Saint-Jean-Pied-de-Port. On parle aujourd\'hui de voie de Paris.\n\nLa via Lemovicensis, qui passe par Limoges, d\'où son nom ; le sanctuaire était Vézelay. Ce chemin rejoint l\'Espagne par Saint-Jean-Pied-de-Port. On parle aujourd\'hui de Chemin de Vezelay.\n\nLa via Podiensis, qui tire son nom du Puy-en-Velay ; ce chemin est balisé comme  GR 65. Ce chemin rejoint l\'Espagne par Saint-Jean-Pied-de-Port. On parle aujourd\'hui de Chemin du Puy. Au Puy-en-Velay, on dit le Saint-Jacques.\n\nLa via Tolosane, qui passe par Toulouse, d\'où son nom ; mais elle s\'est aussi appelée via Arletanensis, du sanctuaire d\'Arles. Ce chemin rejoint l\'Espagne par le col du Somport. On parle aujourd\'hui de Chemin d\'Arles.</item>
+    </string-array>
+    <string-array name="TexteMotsCles">
+        <item >Buen camino\n\nQui signifie en espagnol \&quot;bon chemin\&quot;, c\'est un peu comme le bonjour entre pèlerin. Cette expression est celle que tu entendras le plus sur le chemin, que ce soit d\'un pèlerin ou parfois même des riverains.</item>
+   	 	<item >Crédentiale\n\nLe terme Crédentiale vient de \&quot;crédence\&quot;, qui signifie \&quot;faire confiance\&quot; ; il s\'agit du carnet du pèlerin, une accréditation délivrée pour authentifier sa motivation spirituelle ; elle instaure un climat de bienveillance entre ses détenteurs, qui la font tamponner à chaque étape. \nTu trouveras plus d’informations dans la partie Préparation</item>
+        <item >Compostela\n\nCe document, qui est écrit en latin, atteste que le voyageur a fait le pèlerinage pour venir se recueillir sur la tombe de l’apôtre Jacques. Il est remis au bureau des pèlerinages de la cathédrale de la ville sainte. Si tu effectues les 100 derniers kilomètres du chemin de Compostelle à pieds ou les 200 derniers à vélo et que les coups de tampon sur ta Crédentiale le confirment (2 tampons par jour de marche), on te donnera La Compostela. Depuis 2009, le certificat est donné qu’aux pèlerins ayant une crédentiale donnée par l’Eglise. \n\n</item>
+        <item >Ultreya\n\nComme disent les pèlerins : \&quot;ULTREYA\&quot;. Cela signifie : va plus loin, va plus haut. Tu découvriras que cette expression prend tout son sens sur le chemin.</item>
+    </string-array>   
+    <string-array name="SpinnerLangueItem">
+        <item >Anglais</item>
+        <item >Français</item>
+        <item >Espagnol</item>
+        <item >Allemand</item>
+        <item >Italien</item>
+    </string-array>
+    <string-array name="SpinnerCategorie">
+        <item >Nourriture</item>
+        <item >Communication</item>
+        <item >Lieux</item>
+        <item >Se déplacer</item>
+    </string-array>
+    
+</resources>

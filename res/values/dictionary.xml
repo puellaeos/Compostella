@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" translatable="false">
+    <string-array name="MotsCategorieNourriture" translatable="false">
+        <item>	to eat	</item> <item>	manger	</item> <item>	comer	</item> <item>	essen	</item> <item>	mangiare	</item>
+		<item>	to drink	</item> <item>	boire	</item> <item>	beber	</item> <item>	trinken	</item> <item>	bere	</item>
+		<item>	breakfast	</item> <item>	petit déjeuner	</item> <item>	desayuno	</item> <item>	Frühstück	</item> <item>	colazione	</item>
+		<item>	lunch	</item> <item>	déjeuner	</item> <item>	comida	</item> <item>	Mittagessen	</item> <item>	colazione	</item>
+		<item>	dinner	</item> <item>	dîner	</item> <item>	cena	</item> <item>	Abendessen	</item> <item>	cena	</item>
+		<item>	meal	</item> <item>	menu	</item> <item>	menú	</item> <item>	Menü	</item> <item>	menu	</item>
+		<item>	pilgrim\'s meal	</item> <item>	menu du pelerin	</item> <item>	menú del pelegrino	</item> <item>	Pilgermenü	</item> <item>	menu del pellegrino	</item>
+		<item>	dish	</item> <item>	plat	</item> <item>	plato	</item> <item>	Gericht	</item> <item>	appartamento	</item>
+		<item>	dessert	</item> <item>	dessert	</item> <item>	postre	</item> <item>	Nachtisch	</item> <item>	dessert	</item>
+		<item>	ice cream	</item> <item>	glace	</item> <item>	helado	</item> <item>	Eis	</item> <item>	ghiaccio	</item>
+		<item>	drinks	</item> <item>	boissons	</item> <item>	bebidas	</item> <item>	Getränke	</item> <item>	bevande	</item>
+		<item>	bread	</item> <item>	pain	</item> <item>	pan	</item> <item>	Brot	</item> <item>	pane	</item>
+		<item>	sandwich	</item> <item>	sandwich	</item> <item>	bocadillo	</item> <item>	belegtes Brot	</item> <item>	panino	</item>
+		<item>	fish	</item> <item>	poisson	</item> <item>	pescado	</item> <item>	Fisch	</item> <item>	pesce	</item>
+		<item>	pork	</item> <item>	porc	</item> <item>	lomo	</item> <item>	Schweinefleisch	</item> <item>	carne di maiale	</item>
+		<item>	chiken	</item> <item>	poulet	</item> <item>	pollo	</item> <item>	Hähnchen	</item> <item>	pollo	</item>
+		<item>	ham	</item> <item>	jambon	</item> <item>	jamon	</item> <item>	Schinken	</item> <item>	prosciutto	</item>
+		<item>	cheese	</item> <item>	fromage	</item> <item>	queso	</item> <item>	Käse	</item> <item>	formaggio	</item>
+		<item>	french fries	</item> <item>	pommes de terre	</item> <item>	Pommes frites	</item> <item>	Kartoffel	</item> <item>	patata	</item>
+		<item>	soup	</item> <item>	soupe	</item> <item>	sopa	</item> <item>	Suppe	</item> <item>	zuppa	</item>
+		<item>	vegetables	</item> <item>	legumes	</item> <item>	verduras	</item> <item>	Gemüse	</item> <item>	verdure	</item>
+		<item>	apple	</item> <item>	pomme	</item> <item>	manzana	</item> <item>	Apfel	</item> <item>	mela	</item>
+		<item>	banana	</item> <item>	banane	</item> <item>	banana	</item> <item>	Banane	</item> <item>	banana	</item>
+		<item>	orange	</item> <item>	orange	</item> <item>	naranja	</item> <item>	Orange	</item> <item>	arancione	</item>
+		<item>	apricot	</item> <item>	abricot	</item> <item>	albaricoque	</item> <item>	Apricot	</item> <item>	albicocca	</item>
+		<item>	peach	</item> <item>	pêche	</item> <item>	melocotón	</item> <item>	Pfirsich </item> <item>	pesco	</item>		
+		<item>	tomato	</item> <item>	tomate	</item> <item>	tomato	</item> <item>	Tomate	</item> <item>	pomodoro	</item>
+		<item>	pasta	</item> <item>	pate	</item> <item>	pasta	</item> <item>	Nudeln	</item> <item>	pasta	</item>
+		<item>	rice	</item> <item>	riz	</item> <item>	arroz	</item> <item>	Reis	</item> <item>	riso	</item>
+		<item>	water	</item> <item>	eau	</item> <item>	agua </item> <item>	Wasser	</item> <item>	acqua	</item>		
+		<item>	white wine	</item> <item>	vin blanc	</item> <item>	vino blanco	</item> <item>	Weißwein	</item> <item>	vino bianco	</item>
+		<item>	red wine	</item> <item>	vin rouge	</item> <item>	vino tinto	</item> <item>	Rotwein	</item> <item>	vino rosso	</item>
+		<item>	orange juice	</item> <item>	jus d\'orange	</item> <item>	zumo de naranja	</item> <item>	Orangensaft	</item> <item>	succo d\'arancia	</item>
+		<item>	coffee	</item> <item>	cafe	</item> <item>	cafe solo	</item> <item>	Kaffee	</item> <item>	caffè	</item>
+		<item>	white coffee	</item> <item>	cafe au lait	</item> <item>	cafe	</item> <item>	Milchkaffee	</item> <item>	caffè con latte	</item>
+		<item>	beer	</item> <item>	bière	</item> <item>	cerveza	</item> <item>	Bier	</item> <item>	birra </item>
+		
+    </string-array>
+    <string-array name="MotsCategorieCommunication" translatable="false">
+        <item>	hello	</item> <item>	bonjour	</item> <item>	hola	</item> <item>	Hallo	</item> <item>	ciao	</item>
+		<item>	how are you ?	</item> <item>	comment ça va ?	</item> <item>	¿que tal ?	</item> <item> Wie geht es Ihnen?	</item> <item>	Come stai?	</item>
+		<item>	Where do you go?	</item> <item>	où vas-tu ?	</item> <item>	¿de dónde vienes ?	</item> <item>	Wohin geht man?	</item> <item>	dove stai andando?	</item>
+		<item>	Where do you come from?	</item> <item>	D\'où viens-tu ?	</item> <item>	¿A dónde vas ?	</item> <item>	Woher kommen Sie?	</item> <item>	Da dove vieni?	</item>
+		<item>	Please	</item> <item>	S\'il vous plait	</item> <item>	por favor	</item> <item>	gefallen	</item> <item>	per favore </item>		
+		<item>	Thank you	</item> <item>	Merci	</item> <item>	Muchas gracias	</item> <item>	Dankeschön	</item> <item>	grazie	</item>
+		<item>	you\'re welcome	</item> <item>	de rien	</item> <item>	de nada	</item> <item>	Bitteschön	</item> <item>	niente	</item>
+		<item>	where is the pilgrim refuge? 	</item> <item>	où est l\'auberge de pélerins ?	</item> <item>	¿dónde está el alberguede pelegrino ?	</item> <item>	Wo ist die Herberge für Pilger?	</item> <item>	dove si trova l\'ostello per i pellegrini?	</item>
+		<item>	How much is it ?	</item> <item>	Combien coûte-t-il ?	</item> <item>	¿Cuánto es ?	</item> <item>	Wie viel kostet das?	</item> <item>	Quanto costa?	</item>
+		<item>	opening hours	</item> <item>	horaires d\'ouverture	</item> <item>	horarios de apertura	</item> <item>	Öffnungszeiten	</item> <item>	orari di apertura	</item>
+		<item>	closing hours	</item> <item>	horaires de fermeture	</item> <item>	horarios de cierre	</item> <item>	Schließzeiten	</item> <item>	orarir di chiusura	</item>
+		<item>	today	</item> <item>	aujourd\'hui	</item> <item>	hoy	</item> <item>	Heute	</item> <item>	oggi	</item>
+		<item>	yesterday	</item> <item>	hier	</item> <item>	ayer	</item> <item>	Gestern	</item> <item>	ieri	</item>
+		<item>	tomorrow	</item> <item>	demain	</item> <item>	mañana	</item> <item>	Morgen	</item> <item>	domani	</item>
+		<item>	Hot !	</item> <item>	quel chaleur!	</item> <item>	¡ que calor!	</item> <item>	Heiß!	</item> <item>	Hot !	</item>
+		<item>	I do not understand	</item> <item>	je ne comprend pas	</item> <item>	No entiendo	</item> <item>	Das verstehe ich nicht	</item> <item>	Non capisco	</item>
+		<item>	Can you speak slowly ?	</item> <item>	Pouvez vous parlez lentement ?	</item> <item>	¿ Puedes hablar despacio ?	</item> <item>	Können Sie langsam sprechen?	</item> <item>	si può parlare lentamente?	</item>
+    </string-array>
+    <string-array name="MotsCategorieLieux" translatable="false">
+        <item>	chemist	</item> <item>	pharmacie	</item> <item>	farmacia	</item> <item>	Apotheke	</item> <item>	farmacia	</item>
+		<item>	butcher	</item> <item>	boucherie	</item> <item>	carnicería	</item> <item>	Metzgerei	</item> <item>	macelleria	</item>
+		<item>	bakery	</item> <item>	boulangerie	</item> <item>	panadería	</item> <item>	Bäkerei	</item> <item>	panetteria	</item>
+		<item>	grocer	</item> <item>	épicerie	</item> <item>	tienda	</item> <item>	Lebensmittelladen	</item> <item>	drogheria	</item>
+		<item>	supermarket	</item> <item>	supermarché	</item> <item>	supermercado	</item> <item>	Supermarkt	</item> <item>	supermercato	</item>
+		<item>	kitchen	</item> <item>	cuisine	</item> <item>	cocina	</item> <item>	Küche	</item> <item>	cucina	</item>
+		<item>	restaurant	</item> <item>	restaurant	</item> <item>	restaurante	</item> <item>	Restaurant	</item> <item>	ristorante	</item>
+		<item>	bed and breakfast	</item> <item>	chambre d\'hôtes	</item> <item>	casa rural	</item> <item>	Übernachtung mit Frühstück	</item> <item>	pensione	</item>
+		<item>	hotel	</item> <item>	hotel	</item> <item>	hostel	</item> <item>	Herberge	</item> <item>	albergo	</item>
+		<item>	dormitory	</item> <item>	dortoir	</item> <item>	dormitorio	</item> <item>	Schlafsaal	</item> <item>	dormitorio	</item>
+		<item>	pilgrim refuge	</item> <item>	gîte de pelerin	</item> <item>	albergue de pelegrino	</item> <item>	Herberge	</item> <item>	pensione	</item>
+		<item>	footpath	</item> <item>	chemin	</item> <item>	camino	</item> <item>	Wanderweg	</item> <item>	senterio	</item>
+		<item>	Way of St. James	</item> <item>	chemin de Compostelle	</item> <item>	camino de santagio	</item> <item>	Jakobsweg	</item> <item>	Il Cammino di San Giacomo di Compostela	</item>
+		<item>	church	</item> <item>	église	</item> <item>	iglesia	</item> <item>	Kirche	</item> <item>	chiesa	</item>
+		<item>	town hall	</item> <item>	mairie	</item> <item>	ayutamiento	</item> <item>	Rathaus	</item> <item>	municipio	</item>
+		<item>	swimming pool	</item> <item>	piscine	</item> <item>	piscina	</item> <item>	Schwimmbad	</item> <item>	piscina	</item>
+		<item>	Post office	</item> <item>	Poste	</item> <item>	Correos	</item> <item>	Postamt	</item> <item>	Posta	</item>
+		<item>	town	</item> <item>	ville	</item> <item>	ciudad	</item> <item>	Stadt	</item> <item>	città	</item>
+		<item>	village	</item> <item>	village	</item> <item translatable="false">	pueblo	</item> <item>	Dorf	</item> <item>	villagio	</item>
+    </string-array>
+    <string-array name="MotsCategorieSeDeplacer" translatable="false">
+     	<item>	right	</item> <item>	droite	</item> <item>	derecha	</item> <item>	rechts	</item> <item>	destra	</item>
+		<item>	left	</item> <item>	gauche	</item> <item>	izquierda	</item> <item>	links	</item> <item>	a sinistra	</item>
+		<item>	turn right	</item> <item>	tourner à droite	</item> <item>	girar a la derecha	</item> <item>	Biegen Sie rechts ab	</item> <item>	girare a destra	</item>
+		<item>	turn left	</item> <item>	tourner à gauche	</item> <item>	girar a la izquierda	</item> <item> Biegen Sie links ab	</item> <item>	girare a sinistra	</item>
+		<item>	go straight on	</item> <item>	aller tout droit	</item> <item>	todo recto	</item> <item>	Gehen Sie geradeaus	</item> <item>	proseguire dritto	</item>
+		<item>	to walk	</item> <item>	marcher	</item> <item>	andar	</item> <item>	gehen	</item> <item>	camminare	</item>
+		<item>	car	</item> <item>	voiture	</item> <item>	coche	</item> <item>	Auto	</item> <item>	auto 	</item>
+		<item>	bus	</item> <item>	bus	</item> <item>	autobús	</item> <item>	Bus	</item> <item>	autobus	</item>
+		<item>	tren	</item> <item>	train 	</item> <item>	tran	</item> <item>	Zug	</item> <item>	treno	</item>
+		<item>	train station	</item> <item>	gare ferovière	</item> <item>	estaction de ferrocarril	</item> <item>	Bahnhof	</item> <item>	ferrovia	</item>
+		<item>	taxi	</item> <item>	taxi	</item> <item>	taxi	</item> <item>	taxi	</item> <item>	Taxi	</item>
+		<item>	plane	</item> <item>	avion	</item> <item>	aeronave	</item> <item>	Flugzeug	</item> <item>	aereo	</item>
+		<item>	airport	</item> <item>	aéroport	</item> <item>	aeropuerto	</item> <item>	Flughafen	</item> <item>	aeroporto	</item>
+    </string-array>
+    
+</resources>

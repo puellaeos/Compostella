@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutActivity"> 
+    <TextView
+        android:id="@+id/tvTitreCompostelleActivity"
+        android:text="@string/TitreCompostelle"
+        style="@style/TitreActivity"></TextView>
+    
+     <TableLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_margin="10dp" >
+
+         <TableRow
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+         	 android:gravity="center"
+		        android:layout_weight="1" >
+                 <Button
+			        android:id="@+id/bCompostelleNewStep"
+			        android:text="@string/TitreCompostelleNewStep"
+			        style="@style/LinkSousActivity"/>"
+         </TableRow>
+         <TableRow
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" 
+         	 android:gravity="center"
+		     android:layout_weight="1">
+		    <Button
+		        android:id="@+id/bCompostelleListStep"
+		        android:text="@string/TitreCompostelleListStep"
+			    style="@style/LinkSousActivity" />
+         </TableRow>
+     </TableLayout>
+</LinearLayout>

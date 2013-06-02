@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutActivity">
+    
+    <TextView
+        android:id="@+id/tvTitrePreparationActivity"
+        style="@style/TitreActivity"
+        android:text="@string/TitrePreparation" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" 
+                android:gravity="center">
+				<ImageView
+				   android:id="@+id/imageView1"
+				   android:layout_width="wrap_content"
+				   android:layout_height="wrap_content"
+				   android:layout_weight="1"
+				   android:src="@drawable/im2" />
+				<ImageView
+					android:id="@+id/imageView2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:src="@drawable/im3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" 
+                android:gravity="center_vertical">"
+				<TableLayout
+				    android:layout_width="match_parent" android:layout_height="match_parent" >
+				 <TableRow
+				        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				        android:layout_weight="1" android:gravity="center">
+		            <Button
+		                android:id="@+id/ButtonPapiers"
+						style="@style/LinkSousActivity"
+		                android:text="@string/TitrePapiers"/>
+	            </TableRow>
+	            <TableRow
+				        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				        android:layout_weight="1" android:gravity="center">
+		            <Button
+		                android:id="@+id/ButtonPartir"
+						style="@style/LinkSousActivity"
+		                android:text="@string/TitreMarcher" />
+	            </TableRow>
+	            <TableRow
+				        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				        android:layout_weight="1" android:gravity="center">
+		            <Button
+		                android:id="@+id/ButtonEquipement"
+						style="@style/LinkSousActivity"
+		                android:text="@string/TitreSequiper" />
+	            </TableRow>
+	            <TableRow
+				        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				        android:layout_weight="1" android:gravity="center">
+		            <Button
+		                android:id="@+id/buttonRestaurant"
+						style="@style/LinkSousActivity"
+		                android:text="@string/TitreManger" />
+	            </TableRow>
+	            <TableRow
+				        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				        android:layout_weight="1" android:gravity="center">
+		            <Button
+		                android:id="@+id/ButtonLogement"
+						style="@style/LinkSousActivity"
+		                android:text="@string/TitreDormir" />
+	            </TableRow>
+				</TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
