@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/LayoutActivity"
+   android:focusable="true" android:focusableInTouchMode="true">
+   
+    
+    <TextView
+        android:id="@+id/tvCaminovoxListAlberguesTitre"
+        style="@style/TitreActivity"
+        android:text="@string/TitreCaminoVoxListAlbergue"/>"
+	
+
+	<EditText
+        android:id="@+id/etCaminovoxListAlberguesFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TexteCaminoVoxListFilter"
+        android:inputType="text">
+    </EditText>
+   <TextView
+        android:id="@+id/tvCaminovoxListAlberguesTexte"
+        style="@style/TexteSimple"
+        android:text="@string/TexteCaminoVoxListAlbergue"/>
+    
+    
+    <ListView
+        android:id="@+id/lvCaminovoxListAlbergues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+		android:divider="@color/BrownDark"
+		android:dividerHeight="1dp" >
+    </ListView>
+
+
+
+</LinearLayout>

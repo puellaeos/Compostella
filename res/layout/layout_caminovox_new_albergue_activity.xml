@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+style="@style/LayoutActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+     
+
+    <TextView
+        android:id="@+id/tvCaminovoxNewAlbergueTitre"
+        android:text="@string/TitreCaminoVoxNewAlbergue"
+        style="@style/TitreActivity" />
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+       android:paddingBottom="10dp"
+        android:weightSum="5">
+         <!--    colone gauche - type + periode -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="4"  >
+            
+            <TextView
+                android:id="@+id/tvCaminovoxNewAlbergueNom"
+                style="@style/TexteSimple"
+	            android:text="@string/TexteAlbergueNom"/>
+
+            <EditText
+                android:id="@+id/etCaminovoxNewAlbergueNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+            
+            <TextView
+                android:id="@+id/tvCaminovoxNewAlbergueVille"
+                style="@style/TexteSimple"
+	            android:text="@string/TexteAlbergueVille"/>
+
+            <EditText
+                android:id="@+id/etCaminovoxNewAlbergueVille"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+            <TextView
+	            android:id="@+id/tvCaminovoxNewAlbergueType"
+				style="@style/TexteSimple"
+	            android:text="@string/TexteAlbergueType" />
+            <Spinner
+                android:id="@+id/spCaminovoxNewAlbergueType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btest1"   />
+           
+	       <!--  <TextView
+	            android:id="@+id/tvCaminovoxAlbergueTitrePeriode"
+				style="@style/TexteSimple"
+	            android:text="Titre periode" />            
+            <TextView
+	            android:id="@+id/tvCaminovoxAlberguePeriode"
+	            style="@style/TexteSimpleClair"
+	            android:text="Periode" /> --> 
+            </LinearLayout>
+         <!--    colone droite -prix+places -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:gravity="right"
+                android:layout_weight="1">
+                <TextView
+		            android:id="@+id/tvCaminovoxNewAlberguePrix"
+		            style="@style/TexteSimple"
+		            android:text="@string/TexteAlberguePrix" />
+
+                <EditText
+                    android:id="@+id/etCaminovoxNewAlberguePrix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" > 
+                </EditText>
+		        <TextView
+		            android:id="@+id/tvCaminovoxNewAlberguePlaces"
+		            style="@style/TexteSimple"
+		            android:text="@string/TexteAlbergueNBPlaces" />
+		        <EditText
+		            android:id="@+id/etCaminovoxNewAlberguePlaces"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+   <TextView
+       android:id="@+id/tvCaminovoxNewAlbergueNote"
+       style="@style/TexteSimple"
+       android:text="@string/TexteAlbergueNote"  />
+                
+   <RatingBar
+       android:id="@+id/rbCaminovoxNewAlbergueNote"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:layout_gravity="center_horizontal"
+       android:max="5"
+       android:numStars="5"
+       android:isIndicator="false"
+       android:stepSize="0.1"
+       android:rating="0"
+       android:paddingBottom="10dp"
+       style="@style/customRatingBar"/>
+
+   
+  <TextView
+       android:id="@+id/tvCaminovoxNewAlbergueServices"
+       style="@style/TexteSimple"
+       android:text="@string/TexteAlbergueServices"  />
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:weightSum="5"
+        android:paddingBottom="10dp">
+		
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:gravity="left"
+                android:layout_weight="4"
+                android:weightSum="5">  <!-- que des TV à gauche -->				
+				 <TextView
+				   android:id="@+id/tvCaminovoxNewAlbergueCuisine"
+				   style="@style/TexteSimple"
+				   android:text="@string/TexteAlbergueCuisine" 
+				   android:layout_weight="1" />
+				 <TextView
+				   android:id="@+id/tvCaminovoxNewAlbergueLaveLinge"
+				   style="@style/TexteSimple"
+				   android:text="@string/TexteAlbergueLaveLinge" 
+				   android:layout_weight="1"  />				  
+				<TextView
+				   android:id="@+id/tvCaminovoxNewAlbergueSecheLinge"
+				   style="@style/TexteSimple"
+				   android:text="@string/TexteAlbergueSecheLinge" 
+				   android:layout_weight="1"  />				  
+				<TextView
+				   android:id="@+id/tvCaminovoxNewAlbergueInternet"
+				   style="@style/TexteSimple"
+				   android:text="@string/TexteAlbergueInternet" 
+				   android:layout_weight="1"  />				  
+				<TextView
+				   android:id="@+id/tvCaminovoxNewAlbergueWifi"
+				   style="@style/TexteSimple"
+				   android:text="@string/TexteAlbergueWifi" 
+				   android:layout_weight="1"  />	
+            </LinearLayout>
+			
+			<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" 
+                android:gravity="right"
+                android:layout_weight="1">
+                <!-- que des checkbox à droite --> 
+				<CheckBox
+				android:id="@+id/cbCaminovoxNewAlbergueCuisine"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+				<CheckBox
+				android:id="@+id/cbCaminovoxNewAlbergueLaveLinge"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />				
+				<CheckBox
+				android:id="@+id/cbCaminovoxNewAlbergueSecheLinge"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />				
+				<CheckBox
+				android:id="@+id/cbCaminovoxNewAlbergueInternet"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />				
+				<CheckBox
+				android:id="@+id/cbCaminovoxNewAlbergueWifi"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+            </LinearLayout> 
+                <!-- <ImageButton
+                    android:id="@+id/ibCaminovoxNewAlbergueCuisine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_cuisine" 
+                    />
+
+                <ImageButton
+                    android:id="@+id/ibCaminovoxNewAlbergueLaveLinge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_lavelinge" />
+
+                <ImageButton
+                    android:id="@+id/ibCaminovoxNewAlbergueSecheLinge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_sechelinge" />
+
+                <ImageButton
+                    android:id="@+id/ibCaminovoxNewAlbergueInternet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_internet" />
+
+                <ImageButton
+                    android:id="@+id/ibCaminovoxNewAlbergueWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_wifi" /> -->
+</LinearLayout>
+
+    <Button
+        android:id="@+id/bCaminovoxNewAlbergueCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TexteStepSave" 
+        style="@style/LinkSousActivity" />
+
+    
+       </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

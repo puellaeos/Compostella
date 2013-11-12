@@ -9,9 +9,10 @@
 		style="@style/TexteItemListView"
 		android:layout_weight="1"
 		android:layout_width="0dp"/>
+    
     <TextView
         android:id="@+id/tvLangue2ItemDictionnaire"
 		style="@style/TexteItemListView"
 		android:layout_weight="1"
-		android:layout_width="0dp"/>
+		android:layout_width="0dp" />
 </LinearLayout>

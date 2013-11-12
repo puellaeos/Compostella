@@ -7,13 +7,14 @@ public class Albergue implements Parcelable {
 	
 	
 	private int id;
-	private String nom, ville, nbplaces, prix, type, note, cuisine, lavelinge, sechelinge, internet, wifi, periode, toupdate;
+	private String nom, ville, nbplaces, prix, type, note, cuisine, lavelinge, sechelinge, internet, wifi/*, periode, toupdate*/;
 	
+
 	public Albergue(){}
 	public Albergue(int id, String nom, String ville, String nbplaces,
 			String prix, String type, String note, String cuisine,
-			String lavelinge, String sechelinge, String internet, String wifi,
-			String periode, String toupdate) {
+			String lavelinge, String sechelinge, String internet, String wifi/*,
+			String periode, String toupdate*/) {
 		super();
 		this.id = id;
 		this.nom = nom;
@@ -27,15 +28,15 @@ public class Albergue implements Parcelable {
 		this.sechelinge = sechelinge;
 		this.internet = internet;
 		this.wifi = wifi;
-		this.periode = periode;
-		this.toupdate = toupdate;
+//		this.periode = periode;
+//		this.toupdate = toupdate;
 	}
 
 
 	public Albergue(String nom, String ville, String nbplaces, String prix,
 			String type, String note, String cuisine, String lavelinge,
-			String sechelinge, String internet, String wifi, String periode,
-			String toupdate) {
+			String sechelinge, String internet, String wifi/*, String periode,
+			String toupdate*/) {
 		super();
 		this.nom = nom;
 		this.ville = ville;
@@ -48,11 +49,24 @@ public class Albergue implements Parcelable {
 		this.sechelinge = sechelinge;
 		this.internet = internet;
 		this.wifi = wifi;
-		this.periode = periode;
-		this.toupdate = toupdate;
+//		this.periode = periode;
+//		this.toupdate = toupdate;
 	}
 
-	
+	public static final Parcelable.Creator<Albergue> CREATOR = new Parcelable.Creator<Albergue>()
+			{
+			    public Albergue createFromParcel(Parcel source)
+			    {
+			        return new Albergue(source);
+			    }
+
+			    public Albergue[] newArray(int size)
+			    {
+				return new Albergue[size];
+			    }
+			};
+			
+			
 	public Albergue(Parcel in) {
 		this.id = in.readInt();
 		this.nom = in.readString();		
@@ -66,8 +80,8 @@ public class Albergue implements Parcelable {
 		this.sechelinge = in.readString();
 		this.internet = in.readString();
 		this.wifi = in.readString();
-		this.periode = in.readString();
-		this.toupdate = in.readString();
+//		this.periode = in.readString();
+//		this.toupdate = in.readString();
 	}
 
 	public int describeContents() {
@@ -76,6 +90,7 @@ public class Albergue implements Parcelable {
 
 	public void writeToParcel(Parcel dest, int flags) {
 		dest.writeInt(id);
+		dest.writeString(nom);
 		dest.writeString(ville);
 		dest.writeString(nbplaces);
 		dest.writeString(prix);
@@ -86,8 +101,8 @@ public class Albergue implements Parcelable {
 		dest.writeString(sechelinge);
 		dest.writeString(internet);
 		dest.writeString(wifi);
-		dest.writeString(periode);
-		dest.writeString(toupdate);	
+//		dest.writeString(periode);
+//		dest.writeString(toupdate);	
 	}
 
 
@@ -199,43 +214,30 @@ public class Albergue implements Parcelable {
 	public void setInternet(String internet) {
 		this.internet = internet;
 	}
-
-
 	public String getWifi() {
 		return wifi;
 	}
-
-
 	public void setWifi(String wifi) {
 		this.wifi = wifi;
 	}
 
-
-	public String getPeriode() {
-		return periode;
-	}
-
-
-	public void setPeriode(String periode) {
-		this.periode = periode;
-	}
-
-
-	public String getToupdate() {
-		return toupdate;
-	}
+//	public String getPeriode() {
+//		return periode;
+//	}
+//
+//
+//	public void setPeriode(String periode) {
+//		this.periode = periode;
+//	}
 
 
-	public void setToupdate(String toupdate) {
-		this.toupdate = toupdate;
-	}
-
-	
-	
-	
-	
-	
-	
-	
+//	public String getToupdate() {
+//		return toupdate;
+//	}
+//
+//
+//	public void setToupdate(String toupdate) {
+//		this.toupdate = toupdate;
+//	}
 	
 }

@@ -79,7 +79,7 @@
                      android:layout_weight="1" android:gravity="center">
 		          <Button
 		              android:id="@+id/ButtonJournal"
-		              android:text="@string/TitreJournal"
+		              android:text="@string/TitreCaminoVox"
 					  style="@style/LinkSousActivity"/>		
         </TableRow>
         </TableRow>

@@ -117,8 +117,8 @@ public class CaminoVoxBddAdapter {
 		values.put(COLONNE_ALBERGUE_SECHELINGE, albergue.getSechelinge());
 		values.put(COLONNE_ALBERGUE_INTERNET, albergue.getInternet());
 		values.put(COLONNE_ALBERGUE_WIFI, albergue.getWifi());
-		values.put(COLONNE_ALBERGUE_PERIODE, albergue.getPeriode());
-		values.put(COLONNE_ALBERGUE_TO_UPDATE, albergue.getToupdate());		
+//		values.put(COLONNE_ALBERGUE_PERIODE, albergue.getPeriode());
+//		values.put(COLONNE_ALBERGUE_TO_UPDATE, albergue.getToupdate());		
 		return bdd.insert(TABLE_ALBERGUES, null, values);
 	}
 	
@@ -138,8 +138,8 @@ public class CaminoVoxBddAdapter {
 		values.put(COLONNE_ALBERGUE_SECHELINGE, albergue.getSechelinge());
 		values.put(COLONNE_ALBERGUE_INTERNET, albergue.getInternet());
 		values.put(COLONNE_ALBERGUE_WIFI, albergue.getWifi());
-		values.put(COLONNE_ALBERGUE_PERIODE, albergue.getPeriode());
-		values.put(COLONNE_ALBERGUE_TO_UPDATE, albergue.getToupdate());		
+//		values.put(COLONNE_ALBERGUE_PERIODE, albergue.getPeriode());
+//		values.put(COLONNE_ALBERGUE_TO_UPDATE, albergue.getToupdate());		
 		return bdd.update(TABLE_ALBERGUES, values, COLONNE_ALBERGUE_ID+" = "+id, null);
 	}
 	
@@ -162,8 +162,8 @@ public class CaminoVoxBddAdapter {
 			retAlbergue.setSechelinge(c.getString(COLONNE_ALBERGUE_SECHELINGE_ID));
 			retAlbergue.setInternet(c.getString(COLONNE_ALBERGUE_INTERNET_ID));
 			retAlbergue.setWifi(c.getString(COLONNE_ALBERGUE_WIFI_ID));
-			retAlbergue.setPeriode(c.getString(COLONNE_ALBERGUE_PERIODE_ID));
-			retAlbergue.setToupdate(c.getString(COLONNE_ALBERGUE_TO_UPDATE_ID));
+//			retAlbergue.setPeriode(c.getString(COLONNE_ALBERGUE_PERIODE_ID));
+//			retAlbergue.setToupdate(c.getString(COLONNE_ALBERGUE_TO_UPDATE_ID));
 			c.close();
 			return retAlbergue;
 		}
@@ -189,8 +189,8 @@ public class CaminoVoxBddAdapter {
 				retAlbergue.setSechelinge(c.getString(COLONNE_ALBERGUE_SECHELINGE_ID));
 				retAlbergue.setInternet(c.getString(COLONNE_ALBERGUE_INTERNET_ID));
 				retAlbergue.setWifi(c.getString(COLONNE_ALBERGUE_WIFI_ID));
-				retAlbergue.setPeriode(c.getString(COLONNE_ALBERGUE_PERIODE_ID));
-				retAlbergue.setToupdate(c.getString(COLONNE_ALBERGUE_TO_UPDATE_ID));				
+//				retAlbergue.setPeriode(c.getString(COLONNE_ALBERGUE_PERIODE_ID));
+//				retAlbergue.setToupdate(c.getString(COLONNE_ALBERGUE_TO_UPDATE_ID));				
 				retAlbergues.add(retAlbergue);
 			}while(c.moveToNext());			
 			c.close();

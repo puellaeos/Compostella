@@ -62,13 +62,16 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColor">@color/Marron</item>
-        <item name="android:textSize">22dp</item>
+        <item name="android:textSize">24dp</item>
     </style>
     <style name="TexteSimpleClair">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@android:color/transparent</item> 
         <item name="android:textColor">@color/MarronClair</item>
-        <item name="android:textSize">22dp</item>
+        <item name="android:textSize">28dp</item>
+    </style>
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar</item>
     </style>
 </resources>

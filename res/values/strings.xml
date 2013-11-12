@@ -14,7 +14,9 @@
     <string name="TitreManger">Eat</string>
     <string name="TitreMarcher">Walk</string>
     
-    <string name="TitreJournal">Pictures</string>
+<!--     <string name="TitreJournal">Pictures</string> -->
+    
+    <string name="TitreCaminoVox">CaminoVox</string> 
     <string name="TitrePelerinage">Pilgrimage</string>
     <string name="TitreHistoire">Story </string>
     <string name="TitreChemins">Paths</string>
@@ -32,6 +34,39 @@
     
     
     <!-- Texte des activites -->
+    <string name="TitreCaminoVoxListCity">CaminoVox</string>
+    <string name="TexteCaminoVoxListCity">List of cities with refuges:</string>
+    <string name="TitreCaminoVoxListAlbergue">Refuges</string>
+    <string name="TexteCaminoVoxListAlbergue">List of refuges:</string>
+    <string name="TexteCaminoVoxListFilter">Filter</string>
+    <string name="TitreCaminoVoxNewAlbergue">Refuge</string>
+    <string name="TexteCaminoVoxNewAlbergueSaved">Refuge saved</string>
+    <string name="MenuCaminoVoxAlbergueCreate">Create a refuge</string>
+    <string name="MenuCaminoVoxAlbergueUpdate">Modify a refuge</string>
+    
+    
+    <string name="TexteAlbergueNom">Name</string>
+    <string name="TexteAlbergueVille">City</string>
+    <string name="TexteAlbergueType">Type</string>
+    <string name="TexteAlberguePrix">Price</string>
+    <string name="TexteAlbergueNBPlaces">Places</string>
+    <string name="TexteAlbergueServices">Services</string>
+    <string name="TexteAlbergueCuisine">Kitchen</string>
+    <string name="TexteAlbergueLaveLinge">LaveLinge</string>
+    <string name="TexteAlbergueSecheLinge">SecheLinge</string>
+    <string name="TexteAlbergueInternet">Internet</string>
+    <string name="TexteAlbergueWifi">Wifi</string>
+    
+    <string name="TexteAlbergueNote">Average rating</string> <!-- Valoración media -->
+    <string name="TexteAlbergueTypeAl">pilgrim refuge</string>
+    <string name="TexteAlbergueTypeCasa">Bed and Breafast</string>
+    <string name="TexteAlbergueTypeHo">Hotel</string>
+    <string-array name="SpinnerAlbergueType">
+        <item >pilgrim refuge</item>
+        <item >Bed and Breafast</item>
+        <item >Hotel</item>
+    </string-array>     
+    
     <string name="TexteAPropos">Version 2.1\n\nDeveloped by Aurore Chaligné\n\n share your ideas and your photos with us\n\nBuen Camino :)</string>
     <string name="TexteTorcheCompatible">Touch screen picture to increase or decrease screen light and flash picture to switch on or off the flash </string>
     <string name="TexteTorcheNotCompatible">Touch screen picture to increase or decrease screen light\nYour device is not compatible with torch feature</string>
@@ -101,5 +136,5 @@
         <item >Discuss</item>
         <item >Place</item>
         <item >Move</item>
-    </string-array>    
+    </string-array>     
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-        <!-- Langue FR -->
+        <!-- Langue ES -->
     
     <string name="app_name">Buen Camino</string>
     <!-- Titre des activites -->
@@ -15,7 +15,8 @@
     <string name="TitreManger">Comer</string>
     <string name="TitreMarcher">Caminar</string>
     
-    <string name="TitreJournal">Fotografía</string>
+    <!-- <string name="TitreJournal">Fotografía</string> -->
+    <string name="TitreCaminoVox">CaminoVox</string> 
     <string name="TitrePelerinage">Peregrinación</string>
     <string name="TitreHistoire">La historia</string>
     <string name="TitreChemins">Los caminos</string>
@@ -33,6 +34,32 @@
     
     
     <!-- Texte des activites -->
+    <string name="TitreCaminoVoxListCity">CaminoVox</string>
+    <string name="TitreCaminoVoxListAlbergue">Albergues</string>
+    <string name="TexteCaminoVoxListCity">Lista de las ciudades con albergue :</string>
+    <string name="TexteCaminoVoxListAlbergue">Lista de los albergues :</string>
+    <string name="TexteCaminoVoxListFilter">Filtro</string>
+    <string name="TitreCaminoVoxNewAlbergue">Albergue</string>
+    <string name="TexteCaminoVoxNewAlbergueSaved">Albergue grabado</string>
+    <string name="MenuCaminoVoxAlbergueCreate">Crear albergue</string>
+    <string name="MenuCaminoVoxAlbergueUpdate">Modificar albergue</string>
+    
+    <string name="TexteAlbergueNom">Nombre</string>
+    <string name="TexteAlbergueVille">Ciudad</string>
+    <string name="TexteAlbergueType">Tipo</string>
+    <string name="TexteAlberguePrix">Precio</string>
+    <string name="TexteAlbergueNBPlaces">Espacio</string>
+    <string name="TexteAlbergueServices">Servicios</string>
+    <string name="TexteAlbergueNote">Valoración media</string> <!-- Valoración media -->
+    <string name="TexteAlbergueTypeAl">Albergue</string>
+    <string name="TexteAlbergueTypeCasa">Casa rural </string>
+    <string name="TexteAlbergueTypeHo">Hostel</string>
+    <string-array name="SpinnerAlbergueType">
+        <item >Albergue</item>
+        <item >Casa rural</item>
+        <item >Hostel</item>
+    </string-array> 
+    
     <string name="TexteAPropos">Version 2.1\n\nDesarrollado por Aurore Chaligné\n\n Para mejorar este application, puedes escribirme con ideas.n\nBuen Camino ;)</string>
     <string name="TexteTorcheCompatible">Tocar la imagen de la pantalla para alumbrar el teléfono y la imagen de linterna para alumbrar el flash del teléfono</string>
     <string name="TexteTorcheNotCompatible">Tocar la imagen de la pantalla para alumbrar el teléfono \nVuestra teléfono no es compatible con la funcionalidad de linterna</string>

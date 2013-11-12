@@ -14,7 +14,9 @@
     <string name="TitreManger">Se Restaurer</string>
     <string name="TitreMarcher">Marcher</string>
     
-    <string name="TitreJournal">Des Photos</string>
+   <!--     <string name="TitreJournal">Pictures</string> -->
+    
+    <string name="TitreCaminoVox">CaminoVox</string> 
     <string name="TitrePelerinage">Le pelerinage</string>
     <string name="TitreHistoire">L\'histoire </string>
     <string name="TitreChemins">Les chemins</string>
@@ -32,6 +34,37 @@
     
     
     <!-- Texte des activites -->
+    <string name="TitreCaminoVoxListCity">CaminoVox</string>
+    <string name="TexteCaminoVoxListCity">Liste des villes avec hébergements :</string>
+    <string name="TitreCaminoVoxListAlbergue">Hébergements</string>
+    <string name="TexteCaminoVoxListAlbergue">Liste des hébergements :</string>
+    <string name="TexteCaminoVoxListFilter">Filtre</string>
+    <string name="TitreCaminoVoxNewAlbergue">Hébergement</string>
+    <string name="TexteCaminoVoxNewAlbergueSaved">Hébergement enregistré</string> 
+    <string name="MenuCaminoVoxAlbergueCreate">Creer un hébergement</string>
+    <string name="MenuCaminoVoxAlbergueUpdate">Modifier un hébergement</string>
+    
+    <string name="TexteAlbergueNom">Nom</string>
+    <string name="TexteAlbergueVille">Ville</string>
+    <string name="TexteAlbergueType">Type</string>
+    <string name="TexteAlberguePrix">Prix</string>
+    <string name="TexteAlbergueNBPlaces">Places</string>
+    <string name="TexteAlbergueServices">Services</string>
+    <string name="TexteAlbergueCuisine">Cuisine</string>
+    <string name="TexteAlbergueLaveLinge">LaveLinge</string>
+    <string name="TexteAlbergueSecheLinge">SecheLinge</string>
+    <string name="TexteAlbergueInternet">Internet</string>
+    <string name="TexteAlbergueWifi">Wifi</string>
+    <string name="TexteAlbergueNote">Note moyenne</string> <!-- Valoración media -->
+    <string name="TexteAlbergueTypeAl">Auberge</string>
+    <string name="TexteAlbergueTypeCasa">Maison d\'h\ôtes</string>
+    <string name="TexteAlbergueTypeHo">H\ôtel</string>
+    <string-array name="SpinnerAlbergueType">
+        <item >Auberge</item>
+        <item >Maison d\'h\ôtes</item>
+        <item >H\ôtel</item>
+    </string-array> 
+    
     <string name="TexteAPropos">Version 2.1\n\nDéveloppé par Aurore Chaligné\n\n Pour continuer de faire vivre cette application, n\'hésite pas à me contacter pour me faire part de tes idées ou de tes photos\n\nBuen Camino ;)</string>
     <string name="TexteTorcheCompatible">Toucher l\'image de l\'écran pour éclairer davantage l\'écran ou le flash pour allumer ou éteindre le flash</string>
     <string name="TexteTorcheNotCompatible">Toucher l\'image de l\'écran pour éclairer davantage l\'écran \nVotre appareil n\'est pas compatible avec la fonctionnalité torche</string>

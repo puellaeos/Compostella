@@ -6,7 +6,7 @@
     <TextView
         android:id="@+id/tvTitreJournalActivity"
         style="@style/TitreActivity"
-        android:text="@string/TitreJournal" />
+        android:text="TitreJournal" />
 
     <ImageView
         android:id="@+id/imJournalActivity"
@@ -29,6 +29,6 @@
         android:layout_height="wrap_content"/>
         
         
-    </LinearLayout>
+    </LinearLayout> 
     
 </LinearLayout>
