@@ -141,9 +141,9 @@ public class CaminoVoxNewAlbergueActivity extends Activity{
 					//creation de la requete
 					HttpPost request = null;
 					if(isNewStep){ //cas de creation
-						request = new HttpPost("http://maxime-riviere.com/buen_camino/setAlbergue.php"); 
+						request = new HttpPost("http://maxime-riviere.com/buen_camino_api/addAlbergue"); 
 	            	 } else{//cas de modification
-	            		 request = new HttpPost("http://maxime-riviere.com/buen_camino/updateAlbergue.php");
+	            		 request = new HttpPost("http://maxime-riviere.com/buen_camino_api/updateAlbergue");
 	            	 }
 					Log.i("NewAlbergue", "json="+jsonP.toString());
 					request.setEntity(new ByteArrayEntity(jsonP.toString().getBytes("UTF8")));

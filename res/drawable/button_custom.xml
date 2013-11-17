@@ -2,14 +2,14 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
     <item
         android:state_pressed="true"
-        android:drawable="@drawable/button3_pressed" />
+        android:drawable="@drawable/button_pressed" />
     <!--  <item
         android:state_focused="true"
         android:drawable="@drawable/button2" /> -->
      
      <item
         android:state_enabled="true"
-        android:drawable="@drawable/button1" />
+        android:drawable="@drawable/button" />
 
 
 </selector>

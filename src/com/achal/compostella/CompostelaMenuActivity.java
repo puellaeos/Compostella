@@ -58,7 +58,7 @@ public class CompostelaMenuActivity extends Activity {
         bPreparation = (Button) findViewById(R.id.ButtonPreparation);
         bPelerinage = (Button) findViewById(R.id.ButtonPelerinage);
         bOutils = (Button) findViewById(R.id.ButtonOutils);
-        bCaminoVox = (Button) findViewById(R.id.ButtonJournal);
+        bCaminoVox = (Button) findViewById(R.id.ButtonCaminoVox);
         tvTitreView = (TextView) findViewById(R.id.textViewTitreCompostellaMenu);
         
         
@@ -140,7 +140,7 @@ public class CompostelaMenuActivity extends Activity {
 		try{
 			 HttpPost httppost = null;
 			 ArrayList<NameValuePair> nameValuePairs = null;
-			 httppost = new HttpPost("http://maxime-riviere.com/buen_camino/getListVilles.php");
+			 httppost = new HttpPost("http://maxime-riviere.com/buen_camino_api/getListVilles");
 			 //Parametres de connexion
 			 HttpParams httpParameters = new BasicHttpParams();
 			 HttpConnectionParams.setConnectionTimeout(httpParameters, CONNECTION_TIMEOUT);

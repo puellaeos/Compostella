@@ -18,7 +18,6 @@
         <activity android:name=".PelerinageActivity"></activity>
         <activity android:name=".PreparationActivity"></activity>
         <activity android:name=".CompostelleActivity"></activity>
-        <activity android:name=".JournalActivity"></activity>
         <activity android:name=".OutilsActivity"></activity>
         <activity android:name=".CompostelaMenuActivity">
             <intent-filter>

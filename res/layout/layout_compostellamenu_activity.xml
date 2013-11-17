@@ -23,7 +23,7 @@
                      android:layout_weight="1" android:gravity="center">
 	                   <Button
 			              android:id="@+id/ButtonPreparation"
-			              style="@style/LinkSousActivity"
+			              style="@style/ButtonStyle"
 			              android:text="@string/TitrePreparation" />
                    </TableRow>
                    <TableRow
@@ -31,7 +31,7 @@
                      	android:layout_weight="1" android:gravity="center" >
 			          <Button
 			              android:id="@+id/ButtonPelerinage"
-			              style="@style/LinkSousActivity"
+			              style="@style/ButtonStyle"
 			              android:text="@string/TitrePelerinage" /> 
                    </TableRow>
         </TableRow>
@@ -70,7 +70,7 @@
 
 					  <Button
 		              android:id="@+id/ButtonOutils"
-		              style="@style/LinkSousActivity"
+		              style="@style/ButtonStyle"
 		              android:text="@string/TitreOutils" />
 		</TableRow>
 		<TableRow
@@ -78,9 +78,9 @@
                      android:layout_width="0dp" android:layout_height="match_parent" 
                      android:layout_weight="1" android:gravity="center">
 		          <Button
-		              android:id="@+id/ButtonJournal"
+		              android:id="@+id/ButtonCaminoVox"
 		              android:text="@string/TitreCaminoVox"
-					  style="@style/LinkSousActivity"/>		
+					  style="@style/ButtonStyle"/>		
         </TableRow>
         </TableRow>
     </TableLayout>

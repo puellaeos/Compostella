@@ -132,7 +132,7 @@ public class CaminoVoxListCityActivity extends Activity {
 			 HttpPost httppost = null;
 			 ArrayList<NameValuePair> nameValuePairs = null;
 			 // modifier la requete + preciser les param requetes
-			 httppost = new HttpPost("http://maxime-riviere.com/buen_camino/getListAlbergues.php");
+			 httppost = new HttpPost("http://maxime-riviere.com/buen_camino_api/getlistalbergues");
 			 //Ajout des parametres de la requete
 			 nameValuePairs = new ArrayList<NameValuePair>();
 			 nameValuePairs.add(new BasicNameValuePair("ville", ville));			 

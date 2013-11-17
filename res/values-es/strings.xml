@@ -26,8 +26,8 @@
     <string name="TitreDictionnaire">Traductor</string>
      
     <string name="TitreCompostelle">Diario</string>    
-    <string name="TitreCompostelleNewStep">Crear une nueva etapa</string>
-    <string name="TitreCompostelleListStep">Ver mi camino</string>
+    <string name="TitreCompostelleNewStep">Nueva etapa</string>
+    <string name="TitreCompostelleListStep">Mi camino</string>
     <string name="TitreCompostelleStep">Etapa </string>
     
     <string name="TitreTorche">Linterna</string>
@@ -36,8 +36,8 @@
     <!-- Texte des activites -->
     <string name="TitreCaminoVoxListCity">CaminoVox</string>
     <string name="TitreCaminoVoxListAlbergue">Albergues</string>
-    <string name="TexteCaminoVoxListCity">Lista de las ciudades con albergue :</string>
-    <string name="TexteCaminoVoxListAlbergue">Lista de los albergues :</string>
+    <string name="TexteCaminoVoxListCity">Lista de las ciudades con albergue</string>
+    <string name="TexteCaminoVoxListAlbergue">Lista de los albergues</string>
     <string name="TexteCaminoVoxListFilter">Filtro</string>
     <string name="TitreCaminoVoxNewAlbergue">Albergue</string>
     <string name="TexteCaminoVoxNewAlbergueSaved">Albergue grabado</string>

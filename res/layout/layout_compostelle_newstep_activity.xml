@@ -1,135 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/LayoutActivity"> 
+    style="@style/LayoutActivity" >
 
     <TextView
         android:id="@+id/tvTitreCompostelleNewStepActivity" 
         style="@style/TitreActivity"
         android:layout_height="wrap_content"
-        android:text="@string/TitreCompostelleNewStep" />
+        android:text="@string/TitreCompostelleNewStep"  />
 
-    <TableLayout
+    
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" 
-        android:gravity="center">
-        
-         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"  >
-                    <!--date  -->
-            <TableRow
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-				android:layout_weight="1">
- 				<LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" 
-                android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1" >
+   		<!--date  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        	android:layout_weight="1" >
+            <TextView
+                android:id="@+id/tvNewStepDate"
+                style="@style/TexteNewStepActivity"
+                android:text="@string/TexteStepDate" />
+            <Button
+                android:id="@+id/bNewStepDate"
+                style="@style/LinkSousActivity" />
+        </LinearLayout>
+        <!-- distance  -->
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        	android:layout_weight="1" >	
+	        <TextView
+	            android:id="@+id/tvNewStepDistance"
+	            style="@style/TexteNewStepActivity"
+	            android:text="@string/TexteStepDistance" />	
+	        <EditText
+	            android:id="@+id/etNewStepDistance"
+	            style="@style/EditTextStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:inputType="numberDecimal" />
+	    </LinearLayout>
+	</LinearLayout>
 
- 					<TextView
- 					    android:id="@+id/tvNewStepDate"
- 					    style="@style/TexteNewStepActivity"
- 					    android:text="@string/TexteStepDate" />
+			
 
- 					<Button
- 					    android:id="@+id/bNewStepDate"
-						style="@style/LinkSousActivity"/>"
-				 </LinearLayout>
-            </TableRow>
-			<!-- distance  -->
-            <TableRow
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-				android:layout_weight="1">
+        <!--lieu depart  -->
+
 	            <LinearLayout
-	                android:layout_width="match_parent"
+	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content" 
-	                android:orientation="vertical">
-                 <TextView
-	                android:id="@+id/tvNewStepDistance"
-	                style="@style/TexteNewStepActivity"
-	                android:text="@string/TexteStepDistance" />
-	            <EditText
-	                android:id="@+id/etNewStepDistance"
-	                android:layout_width="match_parent"
-	                android:layout_height="match_parent"
-	                android:inputType="numberDecimal" 
-	                android:layout_gravity="bottom"></EditText>
-                </LinearLayout>
-            </TableRow>
-        </TableRow>
-        
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"  >
-             <!--lieu depart  -->
-	            <LinearLayout
-	                android:layout_width="match_parent"
-	                android:layout_height="wrap_content" 
-	                android:orientation="vertical">
+	                android:orientation="vertical"
+        			android:layout_weight="1" >
 	            <TextView
 	                android:id="@+id/tvNewStepStart"
 					style="@style/TexteNewStepActivity"
 	                android:text="@string/TexteStepStart" />
 	            <EditText
 	                android:id="@+id/etNewStepStart"
+	                style="@style/EditTextStyle"
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content" 
 	                android:inputType="text"
 	                android:imeOptions="actionNext"> </EditText>
 	            </LinearLayout>
-	         </TableRow>  
-	            <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"  >
+	         
+        	<!--lieu arrivee  -->
  				<LinearLayout
 	                android:layout_width="match_parent"
 	                android:layout_height="wrap_content" 
-	                android:orientation="vertical"> 
+	                android:orientation="vertical"
+        			android:layout_weight="1" > 
 		            <TextView
 		                android:id="@+id/tvNewStepEnd"
 		                style="@style/TexteNewStepActivity"
 		                android:text="@string/TexteStepEnd" />
 		            <EditText
 		                android:id="@+id/etNewStepEnd"
+	                	style="@style/EditTextStyle"
 		                android:layout_width="match_parent"
 		                android:layout_height="wrap_content" 
 	                android:inputType="text"
 	                android:imeOptions="actionNext"/>
 	 			</LinearLayout>
-            </TableRow>
-		<!-- </TableRow> -->
+
        
         <!-- commentaire -->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"  >
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" 
-                android:orientation="vertical">
+                android:orientation="vertical"
+        		android:layout_weight="1" > 
             <TextView
                 android:id="@+id/tvNewStepCommentaire"
 				style="@style/TexteNewStepActivity"
                 android:text="@string/TexteStepComment" />
             <EditText
                 android:id="@+id/etNewStepCommentaire"
+	            style="@style/EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" 
-	                android:inputType="text" >
+	            android:inputType="text" >
             </EditText>
             </LinearLayout>
-        </TableRow>
-                <!-- AddStep -->
-         <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center" >
+        
+        <!-- AddStep -->
             <Button
                 android:id="@+id/bNewStepAddStep"
-                style="@style/LinkSousActivity"
-                android:text="Save" />
-        </TableRow>
-    </TableLayout>
-
+                style="@style/LinkSousActivity" 
+                android:text="@string/TexteStepSave"
+        		android:layout_weight="1" />
 </LinearLayout>

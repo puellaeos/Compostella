@@ -9,19 +9,22 @@
         style="@style/TitreActivity"
         android:text="@string/TitreCaminoVoxListAlbergue"/>"
 	
-
-	<EditText
-        android:id="@+id/etCaminovoxListAlberguesFilter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/TexteCaminoVoxListFilter"
-        android:inputType="text">
-    </EditText>
    <TextView
         android:id="@+id/tvCaminovoxListAlberguesTexte"
         style="@style/TexteSimple"
         android:text="@string/TexteCaminoVoxListAlbergue"/>
     
+	<EditText
+        android:id="@+id/etCaminovoxListAlberguesFilter" 
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:hint="@string/TexteCaminoVoxListFilter"
+        android:inputType="text"
+        android:lines="1" 
+        android:imeOptions="actionDone">
+    </EditText>
+
     
     <ListView
         android:id="@+id/lvCaminovoxListAlbergues"

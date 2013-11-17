@@ -26,8 +26,8 @@
     <string name="TitreDictionnaire">Traducteur</string>
      
     <string name="TitreCompostelle">Carnet de voyage</string>    
-    <string name="TitreCompostelleNewStep">Créer une nouvelle Etape</string>
-    <string name="TitreCompostelleListStep">Voir mon chemin</string>
+    <string name="TitreCompostelleNewStep">Nnouvelle Etape</string>
+    <string name="TitreCompostelleListStep">Mon chemin</string>
     <string name="TitreCompostelleStep">Etape </string>
     
     <string name="TitreTorche">Torche</string>
@@ -35,13 +35,13 @@
     
     <!-- Texte des activites -->
     <string name="TitreCaminoVoxListCity">CaminoVox</string>
-    <string name="TexteCaminoVoxListCity">Liste des villes avec hébergements :</string>
+    <string name="TexteCaminoVoxListCity">Liste des villes avec hébergements</string>
     <string name="TitreCaminoVoxListAlbergue">Hébergements</string>
-    <string name="TexteCaminoVoxListAlbergue">Liste des hébergements :</string>
+    <string name="TexteCaminoVoxListAlbergue">Liste des hébergements</string>
     <string name="TexteCaminoVoxListFilter">Filtre</string>
     <string name="TitreCaminoVoxNewAlbergue">Hébergement</string>
     <string name="TexteCaminoVoxNewAlbergueSaved">Hébergement enregistré</string> 
-    <string name="MenuCaminoVoxAlbergueCreate">Creer un hébergement</string>
+    <string name="MenuCaminoVoxAlbergueCreate">Ajouter un hébergement</string>
     <string name="MenuCaminoVoxAlbergueUpdate">Modifier un hébergement</string>
     
     <string name="TexteAlbergueNom">Nom</string>

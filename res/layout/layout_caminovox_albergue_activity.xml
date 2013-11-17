@@ -24,16 +24,9 @@ style="@style/LayoutActivity" >
             <TextView
 	            android:id="@+id/tvCaminovoxAlbergueType"
 				style="@style/TexteSimpleClair"  />            
-	       <!--  <TextView
-	            android:id="@+id/tvCaminovoxAlbergueTitrePeriode"
-				style="@style/TexteSimple"
-	            android:text="Titre periode" />            
-            <TextView
-	            android:id="@+id/tvCaminovoxAlberguePeriode"
-	            style="@style/TexteSimpleClair"
-	            android:text="Periode" /> -->
+	     
             </LinearLayout>
-         <!--    colone droite -prix+places -->
+         <!--    colone droite - prix + places -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -70,7 +63,7 @@ style="@style/LayoutActivity" >
        android:max="5"
        android:numStars="5"
        android:isIndicator="true"
-       android:stepSize="0.1"
+       android:stepSize="0.5"
        android:rating="0"
        android:paddingBottom="10dp"
        style="@style/customRatingBar"/>
@@ -86,6 +79,13 @@ style="@style/LayoutActivity" >
         android:layout_height="wrap_content" 
         android:weightSum="5"
         android:paddingBottom="10dp">
+            
+<!--   à continuer              <TextView
+                    android:id="@+id/tvCaminovoxAlbergueNoService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" /> -->
 
                 <ImageView
                     android:id="@+id/ivCaminovoxAlbergueCuisine"
@@ -93,8 +93,7 @@ style="@style/LayoutActivity" >
                     android:layout_height="wrap_content"
                     android:padding="5dp"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_cuisine" 
-                    />
+                    android:src="@drawable/ic_cuisine"  />
 
                 <ImageView
                     android:id="@+id/ivCaminovoxAlbergueLaveLinge"

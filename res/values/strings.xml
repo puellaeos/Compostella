@@ -4,8 +4,7 @@
     
     <string name="app_name">Buen Camino</string>
     <!-- Titre des activites -->
-    <string name="TitreCompostellaMenu">Buen Camino</string>
-    
+    <string name="TitreCompostellaMenu">Buen Camino</string>    
     <string name="TitreAPropos">About Buen Camino</string>
     <string name="TitrePreparation">Preparation</string>
     <string name="TitrePapiers">Organise</string>
@@ -13,31 +12,25 @@
     <string name="TitreDormir">Sleep</string>
     <string name="TitreManger">Eat</string>
     <string name="TitreMarcher">Walk</string>
-    
-<!--     <string name="TitreJournal">Pictures</string> -->
-    
     <string name="TitreCaminoVox">CaminoVox</string> 
     <string name="TitrePelerinage">Pilgrimage</string>
     <string name="TitreHistoire">Story </string>
     <string name="TitreChemins">Paths</string>
-    <string name="TitreMotsCles">Expressions</string>
-    
+    <string name="TitreMotsCles">Expressions</string>    
     <string name="TitreOutils">Tools</string>
-    <string name="TitreDictionnaire">Translator</string>
-     
+    <string name="TitreDictionnaire">Translator</string>     
     <string name="TitreCompostelle">Diary</string>    
     <string name="TitreCompostelleNewStep">New Step</string>
     <string name="TitreCompostelleListStep">List of steps</string>
-    <string name="TitreCompostelleStep">Step </string>
-    
+    <string name="TitreCompostelleStep">Step </string>    
     <string name="TitreTorche">Torch</string>
     
     
     <!-- Texte des activites -->
     <string name="TitreCaminoVoxListCity">CaminoVox</string>
-    <string name="TexteCaminoVoxListCity">List of cities with refuges:</string>
+    <string name="TexteCaminoVoxListCity">List of cities with refuges</string>
     <string name="TitreCaminoVoxListAlbergue">Refuges</string>
-    <string name="TexteCaminoVoxListAlbergue">List of refuges:</string>
+    <string name="TexteCaminoVoxListAlbergue">List of refuges</string>
     <string name="TexteCaminoVoxListFilter">Filter</string>
     <string name="TitreCaminoVoxNewAlbergue">Refuge</string>
     <string name="TexteCaminoVoxNewAlbergueSaved">Refuge saved</string>
@@ -50,7 +43,8 @@
     <string name="TexteAlbergueType">Type</string>
     <string name="TexteAlberguePrix">Price</string>
     <string name="TexteAlbergueNBPlaces">Places</string>
-    <string name="TexteAlbergueServices">Services</string>
+    <string name="TexteAlbergueServices">Services</string><!-- 
+    <string name="TexteAlbergueNoService">No Service</string> -->
     <string name="TexteAlbergueCuisine">Kitchen</string>
     <string name="TexteAlbergueLaveLinge">LaveLinge</string>
     <string name="TexteAlbergueSecheLinge">SecheLinge</string>

@@ -8,20 +8,21 @@
         style="@style/TitreActivity"
         android:text="@string/TitreCaminoVoxListCity"/>
 
-    <EditText
-        android:id="@+id/etCaminovoxListCityFilter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/TexteCaminoVoxListFilter"
-        android:inputType="text">
-    </EditText>
-    
      <TextView
         android:id="@+id/tvCaminovoxListCityTexte"
         style="@style/TexteSimple"
         android:text="@string/TexteCaminoVoxListCity"/>
-    
-    
+
+    <EditText
+        android:id="@+id/etCaminovoxListCityFilter"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:hint="@string/TexteCaminoVoxListFilter"
+        android:inputType="text"
+        android:lines="1" 
+        android:imeOptions="actionDone"> </EditText >
+
     
     <ListView
         android:id="@+id/lvCaminovoxListCity"
