@@ -42,7 +42,7 @@
     <string name="TitreCaminoVoxNewAlbergue">Albergue</string>
     <string name="TexteCaminoVoxNewAlbergueSaved">Albergue grabado</string>
     <string name="MenuCaminoVoxAlbergueCreate">Crear albergue</string>
-    <string name="MenuCaminoVoxAlbergueUpdate">Modificar albergue</string>
+    <string name="MenuCaminoVoxAlbergueUpdate">Editar albergue</string>
     
     <string name="TexteAlbergueNom">Nombre</string>
     <string name="TexteAlbergueVille">Ciudad</string>

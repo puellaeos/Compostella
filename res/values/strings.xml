@@ -34,8 +34,8 @@
     <string name="TexteCaminoVoxListFilter">Filter</string>
     <string name="TitreCaminoVoxNewAlbergue">Refuge</string>
     <string name="TexteCaminoVoxNewAlbergueSaved">Refuge saved</string>
-    <string name="MenuCaminoVoxAlbergueCreate">Create a refuge</string>
-    <string name="MenuCaminoVoxAlbergueUpdate">Modify a refuge</string>
+    <string name="MenuCaminoVoxAlbergueCreate">Create refuge</string>
+    <string name="MenuCaminoVoxAlbergueUpdate">Edit refuge</string>
     
     
     <string name="TexteAlbergueNom">Name</string>
@@ -43,8 +43,7 @@
     <string name="TexteAlbergueType">Type</string>
     <string name="TexteAlberguePrix">Price</string>
     <string name="TexteAlbergueNBPlaces">Places</string>
-    <string name="TexteAlbergueServices">Services</string><!-- 
-    <string name="TexteAlbergueNoService">No Service</string> -->
+    <string name="TexteAlbergueServices">Services</string>
     <string name="TexteAlbergueCuisine">Kitchen</string>
     <string name="TexteAlbergueLaveLinge">LaveLinge</string>
     <string name="TexteAlbergueSecheLinge">SecheLinge</string>

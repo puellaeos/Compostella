@@ -32,10 +32,22 @@
         <activity android:name=".CompostelleListStepActivity"></activity>
         <activity android:name=".CompostelleStepActivity"></activity>
         <activity android:name=".AProposActivity"></activity>
-        <activity android:name=".CaminoVoxListCityActivity"></activity>
-        <activity android:name=".CaminoVoxListAlberguesActivity"></activity>
-        <activity android:name=".CaminoVoxAlbergueActivity"></activity>
-        <activity android:name=".CaminoVoxNewAlbergueActivity"></activity>
+        <activity android:name=".CaminoVoxListCityActivity" android:theme="@style/customActionBarTheme" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".CompostelaMenuActivity" /> </activity>
+        <activity android:name=".CaminoVoxListAlberguesActivity" android:theme="@style/customActionBarTheme">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".CompostelaMenuActivity" /></activity>
+        <activity android:name=".CaminoVoxAlbergueActivity" android:theme="@style/customActionBarTheme">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".CompostelaMenuActivity" /></activity>
+        <activity android:name=".CaminoVoxNewAlbergueActivity" android:theme="@style/customActionBarTheme">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".CompostelaMenuActivity" /></activity>
     </application>
 
 </manifest>

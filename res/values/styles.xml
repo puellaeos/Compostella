@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
     <style name="TitreActivity">
         <item name="android:gravity">center</item>
         <item name="android:textStyle">bold</item>
@@ -91,5 +93,9 @@
     </style>
     <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/custom_ratingbar</item>
+    </style>
+    
+    <style name="customActionBarTheme" parent="@style/Theme.AppCompat"> 
+        <item name="windowActionBarOverlay">true</item>
     </style>
 </resources>

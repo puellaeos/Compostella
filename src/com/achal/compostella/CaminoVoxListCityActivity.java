@@ -21,6 +21,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -28,6 +29,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.SearchView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -47,7 +53,7 @@ import android.widget.TextView;
  * @author Aurore
  *
  */
-public class CaminoVoxListCityActivity extends Activity {
+public class CaminoVoxListCityActivity extends ActionBarActivity {
 
 	protected ProgressDialog mProgressDialog;
 	private static final int WAIT_RESPONSE_TIMEOUT = 12000;
@@ -77,6 +83,9 @@ public class CaminoVoxListCityActivity extends Activity {
 			Typeface font2 = Typeface.createFromAsset(getAssets(), "font2.ttf");
 			tvTitre.setTypeface(font2);	
 			tvTexte.setTypeface(font2);	
+			
+			ActionBar actionBar = getSupportActionBar();
+			actionBar.setDisplayHomeAsUpEnabled(true);
 			
 			ListView lvListCity = (ListView) findViewById(R.id.lvCaminovoxListCity); 
 			lvAdapter = new CaminoVoxListAdapter(this.getBaseContext(),listCity);
@@ -215,12 +224,13 @@ public class CaminoVoxListCityActivity extends Activity {
 	
 	
 	  /**
-		* Méthode qui se déclenchera lorsque vous appuierez sur le bouton menu du téléphone
+		* Méthode qui se déclenchera lorsque vous appuierez sur le bouton menu du téléphone ou la bar d'action
 		*/
-	    public boolean onCreateOptionsMenu(Menu menu) {
-	    	String menu1 = getResources().getString(R.string.MenuCaminoVoxAlbergueCreate);
-	    	 menu.add(0, MENU_CREATE_ALBERGUE, Menu.NONE, menu1); 
-	    	return true;
+	    public boolean onCreateOptionsMenu(Menu menu) {	    	
+	    	getMenuInflater().inflate(R.menu.menu_caminovox_listcity, menu);
+	    	MenuItem searchItem = menu.findItem(R.id.action_searchCity);
+	        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+			return super.onCreateOptionsMenu(menu);
 	     }
 		 
 	    /**
@@ -228,15 +238,23 @@ public class CaminoVoxListCityActivity extends Activity {
 		*/
 	    public boolean onOptionsItemSelected(MenuItem item) {
 	         //On regarde quel item a été cliqué grâce à son id et on déclenche une action
-	    	Intent intent = new Intent(CaminoVoxListCityActivity.this, CaminoVoxNewAlbergueActivity.class);
-			Bundle b = new Bundle();							
-	         switch (item.getItemId()) {
-	            case MENU_CREATE_ALBERGUE: b.putBoolean("isNewStep", true);
-	            	intent.putExtras(b);
+	    	Intent intent; 
+	    	switch (item.getItemId()) {
+	            case R.id.action_addAlbergue: 
+		            intent = new Intent(CaminoVoxListCityActivity.this, CaminoVoxNewAlbergueActivity.class);
+					Bundle b = new Bundle();
+					b.putBoolean("isNewStep", true);							
+			        intent.putExtras(b);
 					startActivity(intent);
 					finish();
 					CaminoVoxListCityActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
 					return true; 
+	            case android.R.id.home : //retour à la page d'accueil via actionBar	            	
+	            	intent = new Intent(CaminoVoxListCityActivity.this,CompostelaMenuActivity.class);
+	    	    	startActivity(intent);
+	    			finish();
+	    			CaminoVoxListCityActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+	            	
 	         }
 	         return false;
 	       }
@@ -245,9 +263,10 @@ public class CaminoVoxListCityActivity extends Activity {
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		 if (keyCode == KeyEvent.KEYCODE_BACK) {
-			Intent intent = new Intent(CaminoVoxListCityActivity.this,CompostelaMenuActivity.class);
-	    	startActivity(intent);
-			finish();
+//			Intent intent = new Intent(CaminoVoxListCityActivity.this,CompostelaMenuActivity.class);
+//	    	startActivity(intent);
+//			finish();
+			 NavUtils.navigateUpFromSameTask(this);
 			CaminoVoxListCityActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
 		 }return super.onKeyDown(keyCode, event);
 	}

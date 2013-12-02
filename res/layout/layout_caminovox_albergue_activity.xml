@@ -80,13 +80,6 @@ style="@style/LayoutActivity" >
         android:weightSum="5"
         android:paddingBottom="10dp">
             
-<!--   à continuer              <TextView
-                    android:id="@+id/tvCaminovoxAlbergueNoService"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" /> -->
-
                 <ImageView
                     android:id="@+id/ivCaminovoxAlbergueCuisine"
                     android:layout_width="wrap_content"

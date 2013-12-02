@@ -21,9 +21,11 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
@@ -83,11 +85,6 @@ public class CaminoVoxNewAlbergueActivity extends Activity{
 		adapterType.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spType.setAdapter(adapterType);
 		
-/*         ibCuisine = (ImageButton) findViewById(R.id.ibCaminovoxNewAlbergueCuisine);
-        ibLaveLinge = (ImageButton) findViewById(R.id.ibCaminovoxNewAlbergueLaveLinge);
-        ibSecheLinge = (ImageButton) findViewById(R.id.ibCaminovoxNewAlbergueSecheLinge);
-        ibInternet = (ImageButton) findViewById(R.id.ibCaminovoxNewAlbergueInternet);
-        ibWifi = (ImageButton) findViewById(R.id.ibCaminovoxNewAlbergueWifi); */
 		cbCuisine = (CheckBox) findViewById(R.id.cbCaminovoxNewAlbergueCuisine);
         cbLaveLinge = (CheckBox) findViewById(R.id.cbCaminovoxNewAlbergueLaveLinge);
         cbSecheLinge = (CheckBox) findViewById(R.id.cbCaminovoxNewAlbergueSecheLinge);
@@ -204,5 +201,18 @@ public class CaminoVoxNewAlbergueActivity extends Activity{
         tvInternet.setTypeface(font2); 
         tvWifi.setTypeface(font2); 
     } 
+
+
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		 if (keyCode == KeyEvent.KEYCODE_BACK) {
+			Intent intent = new Intent(CaminoVoxNewAlbergueActivity.this,CompostelaMenuActivity.class);
+	    	startActivity(intent);
+			finish();
+			CaminoVoxNewAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+		 }return super.onKeyDown(keyCode, event);
+	}
+
 
 }

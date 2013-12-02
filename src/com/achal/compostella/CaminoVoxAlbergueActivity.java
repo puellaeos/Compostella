@@ -1,18 +1,15 @@
 package com.achal.compostella;
 
 import android.app.Activity;
-import android.app.AlarmManager;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
 
 /**
  * Activité qui affiche le détail de l'albergue
@@ -27,7 +24,7 @@ public class CaminoVoxAlbergueActivity extends Activity {
 	private RatingBar rbNote;
 	private Albergue albergue;
 	private static final int MENU_CREATE_ALBERGUE = 1;
-	private static final int MENU_UPDATE_ALBERGUE = 2;
+	private static final int MENU_EDIT_ALBERGUE = 2;
 		
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -69,16 +66,16 @@ public class CaminoVoxAlbergueActivity extends Activity {
 			
 			
 			
-			if(albergue.getCuisine().equals("0"))
-				imCuisine.setVisibility(View.INVISIBLE);
-			if(albergue.getLavelinge().equals("0"))
-				imLaveLinge.setVisibility(View.INVISIBLE);
-			if(albergue.getSechelinge().equals("0"))
-				imSecheLinge.setVisibility(View.INVISIBLE);
-			if(albergue.getInternet().equals("0"))
-				imInternet.setVisibility(View.INVISIBLE);
-			if(albergue.getWifi().equals("0"))
-				imWifi.setVisibility(View.INVISIBLE);			
+			if(albergue.getCuisine().equals("0")) 
+				imCuisine.setImageDrawable(getResources().getDrawable(R.drawable.ic_no_cuisine));
+			if(albergue.getLavelinge().equals("0")) 
+				imLaveLinge.setImageDrawable(getResources().getDrawable(R.drawable.ic_no_lavelinge));
+			if(albergue.getSechelinge().equals("0")) 
+				imSecheLinge.setImageDrawable(getResources().getDrawable(R.drawable.ic_no_sechelinge));
+			if(albergue.getInternet().equals("0")) 
+				imInternet.setImageDrawable(getResources().getDrawable(R.drawable.ic_no_internet));
+			if(albergue.getWifi().equals("0")) 	
+				imWifi.setImageDrawable(getResources().getDrawable(R.drawable.ic_no_wifi));
 			if(albergue.getNote().equals("null") ||albergue.getNote().equals("")){
 				rbNote.setRating(0);
 			}else{
@@ -115,11 +112,13 @@ public class CaminoVoxAlbergueActivity extends Activity {
 	* Méthode qui se déclenchera lorsque vous appuierez sur le bouton menu du téléphone
 	*/
     public boolean onCreateOptionsMenu(Menu menu) {
-    	String menu1 = getResources().getString(R.string.MenuCaminoVoxAlbergueCreate);
-    	String menu2 = getResources().getString(R.string.MenuCaminoVoxAlbergueUpdate);
-    	menu.add(0, MENU_CREATE_ALBERGUE, Menu.NONE, menu1); 
-    	menu.add(0, MENU_UPDATE_ALBERGUE, Menu.NONE,menu2);  
-    	return true;
+//    	String menu1 = getResources().getString(R.string.MenuCaminoVoxAlbergueCreate);
+//    	String menu2 = getResources().getString(R.string.MenuCaminoVoxAlbergueUpdate);
+//    	menu.add(0, MENU_CREATE_ALBERGUE, Menu.NONE, menu1); 
+//    	menu.add(0, MENU_UPDATE_ALBERGUE, Menu.NONE,menu2);  
+//    	return true;
+    	getMenuInflater().inflate(R.menu.menu_caminovox_albergue, menu);
+        return true;
      }
 	 
     /**
@@ -130,20 +129,38 @@ public class CaminoVoxAlbergueActivity extends Activity {
     	Intent intent = new Intent(CaminoVoxAlbergueActivity.this, CaminoVoxNewAlbergueActivity.class);
 		Bundle b = new Bundle();							
          switch (item.getItemId()) {
-            case MENU_CREATE_ALBERGUE: b.putBoolean("isNewStep", true);
-            	intent.putExtras(b);
+//            case MENU_CREATE_ALBERGUE: b.putBoolean("isNewStep", true);
+//            	intent.putExtras(b);
+//				startActivity(intent);
+//				finish();
+//				CaminoVoxAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+//				return true;
+//            case MENU_UPDATE_ALBERGUE:
+//				b.putBoolean("isNewStep", false);
+//				b.putParcelable("albergue", albergue);
+//				intent.putExtras(b);
+//				startActivity(intent);
+//				finish();
+//				CaminoVoxAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+//				return true; 
+         
+         case MENU_CREATE_ALBERGUE:
+        	 b.putBoolean("isNewStep", true);
+         	intent.putExtras(b);
 				startActivity(intent);
 				finish();
 				CaminoVoxAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
 				return true;
-            case MENU_UPDATE_ALBERGUE:
-				b.putBoolean("isNewStep", false);
+         case MENU_EDIT_ALBERGUE:
+        	 b.putBoolean("isNewStep", false);
 				b.putParcelable("albergue", albergue);
 				intent.putExtras(b);
 				startActivity(intent);
 				finish();
 				CaminoVoxAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
 				return true; 
+         
+         
          }
          return false;
        }
