@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+      xmlns:yourapp="http://schemas.android.com/apk/res-auto"  >
     <item
-        android:id="@+id/menu_create_albergue"
+        android:id="@+id/action_addAlbergue"
         android:icon="@drawable/ic_action_new" 
-        android:showAsAction="ifRoom" 
+        yourapp:showAsAction="ifRoom" 
         android:title="@string/MenuCaminoVoxAlbergueCreate"/>
 
       <item
-        android:id="@+id/menu_edit_albergue"
+        android:id="@+id/action_editAlbergue"
         android:icon="@drawable/ic_action_edit" 
-        android:showAsAction="ifRoom" 
+        yourapp:showAsAction="ifRoom" 
         android:title="@string/MenuCaminoVoxAlbergueUpdate"/>
 </menu>

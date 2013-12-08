@@ -11,6 +11,17 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">10dp</item>
     </style>
+        <style name="TitreActivityWithActionBar" > 
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">36dp</item>
+        <item name="android:textColor">@color/Marron</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        
+    </style>
     <style name="LinkSousActivity" parent="TexteSimple">
         <item name="android:background">@drawable/button_custom</item>         
         <item name="android:textColor">@color/Marron</item>
@@ -27,7 +38,7 @@
         <item name="android:textSize">22dp</item>
     </style>
     <style name="EditTextStyle">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/button_custom</item>         
         <item name="android:textColor">@color/Marron</item>     
@@ -96,6 +107,20 @@
     </style>
     
     <style name="customActionBarTheme" parent="@style/Theme.AppCompat"> 
-        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <!-- Support library compatibility -->    
+        <item name="windowActionBarOverlay">true</item>        
+        <item name="actionBarStyle">@style/MyActionBar</item>
     </style>
+	<style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">	    	    
+	    <item name="android:displayOptions">showHome|useLogo</item>
+	    <item name="android:background">@android:color/transparent</item>	
+	    <!-- Support library compatibility -->    	    
+	    <item name="displayOptions">showHome|useLogo</item>
+	    <item name="background">@android:color/transparent</item>	    
+	</style>
+    
+       
+       
 </resources>

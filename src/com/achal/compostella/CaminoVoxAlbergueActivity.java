@@ -4,6 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
@@ -16,15 +22,13 @@ import android.widget.TextView;
  * @author Aurore
  *
  */
-public class CaminoVoxAlbergueActivity extends Activity {
+public class CaminoVoxAlbergueActivity extends ActionBarActivity {
 
 	private TextView tvName, tvPrix, tvPlaces, tvType;
 	private TextView tvTitrePrix, tvTitrePlaces, tvTitreType, tvTitreService, tvTitreNote;
 	private ImageView imCuisine, imSecheLinge, imLaveLinge, imWifi, imInternet;
 	private RatingBar rbNote;
 	private Albergue albergue;
-	private static final int MENU_CREATE_ALBERGUE = 1;
-	private static final int MENU_EDIT_ALBERGUE = 2;
 		
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +52,10 @@ public class CaminoVoxAlbergueActivity extends Activity {
 			rbNote = (RatingBar) findViewById(R.id.rbCaminovoxAlbergueNote);
 			
 			setCustomTypeface();
+			
+			ActionBar actionBar = getSupportActionBar();
+			actionBar.setDisplayHomeAsUpEnabled(true); 
+			
 			
 			tvName.setText(albergue.getNom());
 			tvPrix.setText(albergue.getPrix()+" €");
@@ -112,13 +120,9 @@ public class CaminoVoxAlbergueActivity extends Activity {
 	* Méthode qui se déclenchera lorsque vous appuierez sur le bouton menu du téléphone
 	*/
     public boolean onCreateOptionsMenu(Menu menu) {
-//    	String menu1 = getResources().getString(R.string.MenuCaminoVoxAlbergueCreate);
-//    	String menu2 = getResources().getString(R.string.MenuCaminoVoxAlbergueUpdate);
-//    	menu.add(0, MENU_CREATE_ALBERGUE, Menu.NONE, menu1); 
-//    	menu.add(0, MENU_UPDATE_ALBERGUE, Menu.NONE,menu2);  
-//    	return true;
+
     	getMenuInflater().inflate(R.menu.menu_caminovox_albergue, menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
      }
 	 
     /**
@@ -129,29 +133,14 @@ public class CaminoVoxAlbergueActivity extends Activity {
     	Intent intent = new Intent(CaminoVoxAlbergueActivity.this, CaminoVoxNewAlbergueActivity.class);
 		Bundle b = new Bundle();							
          switch (item.getItemId()) {
-//            case MENU_CREATE_ALBERGUE: b.putBoolean("isNewStep", true);
-//            	intent.putExtras(b);
-//				startActivity(intent);
-//				finish();
-//				CaminoVoxAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
-//				return true;
-//            case MENU_UPDATE_ALBERGUE:
-//				b.putBoolean("isNewStep", false);
-//				b.putParcelable("albergue", albergue);
-//				intent.putExtras(b);
-//				startActivity(intent);
-//				finish();
-//				CaminoVoxAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
-//				return true; 
-         
-         case MENU_CREATE_ALBERGUE:
-        	 b.putBoolean("isNewStep", true);
-         	intent.putExtras(b);
+         case R.id.action_addAlbergue:
+        	 	b.putBoolean("isNewStep", true);
+         		intent.putExtras(b);
 				startActivity(intent);
 				finish();
 				CaminoVoxAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
 				return true;
-         case MENU_EDIT_ALBERGUE:
+         case R.id.action_editAlbergue:
         	 b.putBoolean("isNewStep", false);
 				b.putParcelable("albergue", albergue);
 				intent.putExtras(b);
@@ -159,12 +148,17 @@ public class CaminoVoxAlbergueActivity extends Activity {
 				finish();
 				CaminoVoxAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
 				return true; 
-         
-         
          }
          return false;
        }
 	  
-	  
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		 if (keyCode == KeyEvent.KEYCODE_BACK) {
+				NavUtils.navigateUpFromSameTask(this);
+				CaminoVoxAlbergueActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+		 }return super.onKeyDown(keyCode, event);
+	}
+
 	  
 }

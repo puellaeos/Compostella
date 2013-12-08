@@ -182,7 +182,7 @@ public class CompostelleNewStepActivity extends Activity{
 	   * Retour a la vue parent CompostelleActivity
 	   */
 	  private void retourCompostelle() {
-			Intent intent = new Intent(CompostelleNewStepActivity.this,CompostelleActivity.class);
+			Intent intent = new Intent(CompostelleNewStepActivity.this,OutilsActivity.class);
 			startActivity(intent);
 			finish();
 			CompostelleNewStepActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);

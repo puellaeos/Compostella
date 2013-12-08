@@ -7,14 +7,14 @@
     
     <TextView
         android:id="@+id/tvCaminovoxListAlberguesTitre"
-        style="@style/TitreActivity"
+        style="@style/TitreActivityWithActionBar"
         android:text="@string/TitreCaminoVoxListAlbergue"/>"
 	
    <TextView
         android:id="@+id/tvCaminovoxListAlberguesTexte"
         style="@style/TexteSimple"
         android:text="@string/TexteCaminoVoxListAlbergue"/>
-    
+<!--     
 	<EditText
         android:id="@+id/etCaminovoxListAlberguesFilter" 
         style="@style/EditTextStyle"
@@ -25,7 +25,7 @@
         android:lines="1" 
         android:imeOptions="actionDone">
     </EditText>
-
+ -->
     
     <ListView
         android:id="@+id/lvCaminovoxListAlbergues"

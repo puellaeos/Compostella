@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	style="@style/LayoutActivity" 
-	android:paddingTop="?attr/actionBarSize">
+	style="@style/LayoutActivity" >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -37,8 +36,7 @@
 
             <EditText
                 android:id="@+id/etCaminovoxNewAlbergueNom"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+				style="@style/EditTextStyle" />
             
             
             <TextView
@@ -48,18 +46,18 @@
 
             <EditText
                 android:id="@+id/etCaminovoxNewAlbergueVille"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+				style="@style/EditTextStyle"/>
             
             <TextView
 	            android:id="@+id/tvCaminovoxNewAlbergueType"
 				style="@style/TexteSimple"
 	            android:text="@string/TexteAlbergueType" />
-            <Spinner
+             <Spinner
                 android:id="@+id/spCaminovoxNewAlbergueType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btest1"   />
+                android:background="@drawable/btest1"  
+                android:layout_gravity="center" />
            
 	       <!--  <TextView
 	            android:id="@+id/tvCaminovoxAlbergueTitrePeriode"
@@ -70,13 +68,13 @@
 	            style="@style/TexteSimpleClair"
 	            android:text="Periode" /> --> 
             </LinearLayout>
-         <!--    colone droite -prix+places -->
+         <!--    colone droite - prix+places -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical" 
                 android:gravity="right"
-                android:layout_weight="1">
+                android:layout_weight="1" >
                 <TextView
 		            android:id="@+id/tvCaminovoxNewAlberguePrix"
 		            style="@style/TexteSimple"
@@ -84,8 +82,7 @@
 
                 <EditText
                     android:id="@+id/etCaminovoxNewAlberguePrix"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+					style="@style/EditTextStyle"
                     android:inputType="number" > 
                 </EditText>
 		        <TextView
@@ -94,8 +91,7 @@
 		            android:text="@string/TexteAlbergueNBPlaces" />
 		        <EditText
 		            android:id="@+id/etCaminovoxNewAlberguePlaces"
-		            android:layout_width="match_parent"
-		            android:layout_height="wrap_content"
+					style="@style/EditTextStyle"
 		            android:inputType="number" />
             </LinearLayout>
         </LinearLayout>
@@ -113,7 +109,7 @@
        android:max="5"
        android:numStars="5"
        android:isIndicator="false"
-       android:stepSize="0.1"
+       android:stepSize="0.5"
        android:rating="0"
        android:paddingBottom="10dp"
        style="@style/customRatingBar"/>
@@ -239,7 +235,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/TexteStepSave" 
-        style="@style/LinkSousActivity" />
+        android:layout_gravity="center"
+        style="@style/LinkSousActivity" 
+        />
 
     
        </LinearLayout>

@@ -57,12 +57,12 @@
     <string name="TexteAlbergueWifi">Wifi</string>
     <string name="TexteAlbergueNote">Note moyenne</string> <!-- Valoración media -->
     <string name="TexteAlbergueTypeAl">Auberge</string>
-    <string name="TexteAlbergueTypeCasa">Maison d\'h\ôtes</string>
-    <string name="TexteAlbergueTypeHo">H\ôtel</string>
+    <string name="TexteAlbergueTypeCasa">Maison d\'hôtes</string>
+    <string name="TexteAlbergueTypeHo">Hôtel</string>
     <string-array name="SpinnerAlbergueType">
         <item >Auberge</item>
-        <item >Maison d\'h\ôtes</item>
-        <item >H\ôtel</item>
+        <item >Maison d\'hôtes</item>
+        <item >Hôtel</item>
     </string-array> 
     
     <string name="TexteAPropos">Version 2.1\n\nDéveloppé par Aurore Chaligné\n\n Pour continuer de faire vivre cette application, n\'hésite pas à me contacter pour me faire part de tes idées ou de tes photos\n\nBuen Camino ;)</string>

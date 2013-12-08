@@ -21,11 +21,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
+  
+import android.app.ProgressDialog; 
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -34,19 +31,17 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.SearchView;
-import android.text.Editable;
-import android.text.TextWatcher;
+import android.support.v7.widget.SearchView.OnQueryTextListener; 
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MenuItem.OnActionExpandListener;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.EditText;
+import android.widget.AdapterView.OnItemClickListener; 
 import android.widget.ListView;
-import android.widget.TextView;
-
+import android.widget.TextView; 
 
 /**
  * Activité qui affiché la liste des villes enregistrées (serveur ou bdd - a definir)
@@ -63,8 +58,8 @@ public class CaminoVoxListCityActivity extends ActionBarActivity {
 	private int _idVilleSelected=0;
 	private CaminoVoxListAdapter lvAdapter;
 	private ArrayList<Integer> listIdAlbergue;
-	private static final int MENU_CREATE_ALBERGUE = 1;
-	
+//	private static final int MENU_CREATE_ALBERGUE = 1;
+	private  MenuItem searchItem;
 	
 	
 	@Override
@@ -89,6 +84,7 @@ public class CaminoVoxListCityActivity extends ActionBarActivity {
 			
 			ListView lvListCity = (ListView) findViewById(R.id.lvCaminovoxListCity); 
 			lvAdapter = new CaminoVoxListAdapter(this.getBaseContext(),listCity);
+			lvAdapter.getFilter().filter("");
 			lvListCity.setAdapter(lvAdapter);
 			
 			lvListCity.setOnItemClickListener(new OnItemClickListener() {
@@ -118,15 +114,7 @@ public class CaminoVoxListCityActivity extends ActionBarActivity {
 							}
 					}}).start();
 			}});
-			EditText etFilter = (EditText) findViewById(R.id.etCaminovoxListCityFilter);
-			etFilter.addTextChangedListener(new TextWatcher() {			
-				public void onTextChanged(CharSequence s, int start, int before, int count) { 
-					lvAdapter.getFilter().filter(s.toString());
-				}			
-				public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
-				
-				public void afterTextChanged(Editable s) { }
-			});
+ 
 		}
 	}
 	
@@ -228,8 +216,20 @@ public class CaminoVoxListCityActivity extends ActionBarActivity {
 		*/
 	    public boolean onCreateOptionsMenu(Menu menu) {	    	
 	    	getMenuInflater().inflate(R.menu.menu_caminovox_listcity, menu);
-	    	MenuItem searchItem = menu.findItem(R.id.action_searchCity);
-	        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+	    	searchItem = menu.findItem(R.id.action_searchCity);
+	        SearchView mSearchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+	    	mSearchView.setOnQueryTextListener(new OnQueryTextListener() { 
+					public boolean onQueryTextChange(String newText) {
+						Log.i("listCity - onQueryTextChange", newText);
+						lvAdapter.getFilter().filter(newText.toString());
+						return true;
+					}
+					public boolean onQueryTextSubmit(String query) {
+						Log.i("listCity - onQueryTextSubmit", query);
+						MenuItemCompat.collapseActionView(searchItem);
+						return true;
+					}		
+			});  
 			return super.onCreateOptionsMenu(menu);
 	     }
 		 
@@ -248,13 +248,7 @@ public class CaminoVoxListCityActivity extends ActionBarActivity {
 					startActivity(intent);
 					finish();
 					CaminoVoxListCityActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
-					return true; 
-	            case android.R.id.home : //retour à la page d'accueil via actionBar	            	
-	            	intent = new Intent(CaminoVoxListCityActivity.this,CompostelaMenuActivity.class);
-	    	    	startActivity(intent);
-	    			finish();
-	    			CaminoVoxListCityActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
-	            	
+					return true;  
 	         }
 	         return false;
 	       }
@@ -263,11 +257,17 @@ public class CaminoVoxListCityActivity extends ActionBarActivity {
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		 if (keyCode == KeyEvent.KEYCODE_BACK) {
-//			Intent intent = new Intent(CaminoVoxListCityActivity.this,CompostelaMenuActivity.class);
-//	    	startActivity(intent);
-//			finish();
-			 NavUtils.navigateUpFromSameTask(this);
-			CaminoVoxListCityActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+			 Log.i("onkeydown", "keycode= keycode back = on appuie sur le bouton back !");
+			 if (MenuItemCompat.isActionViewExpanded(searchItem)) {
+				 Log.i("onkeydown", "actionview is expanded !");
+				 MenuItemCompat.collapseActionView(searchItem);
+				 lvAdapter.getFilter().filter("");					
+				 return true;
+			}else{ 
+				Log.i("onkeydown", "actionview is collapse !");
+				NavUtils.navigateUpFromSameTask(this);
+				CaminoVoxListCityActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+			}
 		 }return super.onKeyDown(keyCode, event);
 	}
 

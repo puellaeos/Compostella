@@ -11,6 +11,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
+ * ***** Class non utilisée à supprimer ******
+ * 
+ * 
+ * 
  * Class qui définit la vue CompostelleActivity. 
  * This class est accessible depuis OutilsActivity .
  * L'utilisateur peut accéder à ListStepActivity and NewStepActivity via les boutons

@@ -27,13 +27,10 @@ public class CaminoVoxListAdapter extends BaseAdapter implements Filterable {
 		this.context = context;
 		this.listItem = listItem;
 		this.originListItem = listItem;
-		this.inflater = LayoutInflater.from(context);
-		Log.i("CaminoVoxListAdapter", "constructer");
+		this.inflater = LayoutInflater.from(context); 
 	}
 	
 	public View getView(int position, View convertView, ViewGroup parentView) {
-		Log.i("CaminoVoxListAdapter", "getview");
-		
 		View v=null;
 		if(convertView!=null)
 			v= convertView;
@@ -43,9 +40,7 @@ public class CaminoVoxListAdapter extends BaseAdapter implements Filterable {
 		tvItem = (TextView) v.findViewById(R.id.tvCaminovoxListItemName);
 		Typeface font2 = Typeface.createFromAsset(context.getAssets(), "font2.ttf");
 		tvItem.setTypeface(font2);		
-		tvItem.setText(listItem.get(position));		
-		Log.i("CaminoVoxListAdapter", "getview, item i="+listItem.get(position));
-		
+		tvItem.setText(listItem.get(position));		  
 		return v;
 	}
 
@@ -89,7 +84,7 @@ public class CaminoVoxListAdapter extends BaseAdapter implements Filterable {
 				ArrayList<String> nList = new ArrayList<String>();
 
 				for (String s : listItem) {
-					if (s.toUpperCase().startsWith(constraint.toString().toUpperCase()))
+					if (s.toUpperCase().contains(constraint.toString().toUpperCase()))
 						nList.add(s);
 				}
 
@@ -101,8 +96,7 @@ public class CaminoVoxListAdapter extends BaseAdapter implements Filterable {
 		}
 
 		@Override
-		protected void publishResults(CharSequence constraint,
-				FilterResults results) {
+		protected void publishResults(CharSequence constraint, FilterResults results) {
 			// Now we have to inform the adapter about the new list filtered
 						if (results.count == 0)
 							notifyDataSetInvalidated();

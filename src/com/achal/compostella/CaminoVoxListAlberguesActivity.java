@@ -26,9 +26,16 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.SearchView.OnQueryTextListener;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -44,7 +51,7 @@ import android.widget.TextView;
  * @author Aurore
  *
  */
-public class CaminoVoxListAlberguesActivity extends Activity  {
+public class CaminoVoxListAlberguesActivity extends ActionBarActivity  {
 
 
 	protected ProgressDialog mProgressDialog;
@@ -56,7 +63,8 @@ public class CaminoVoxListAlberguesActivity extends Activity  {
 	private int _itemSelected=0;
  	private String nameCity=null;
 	private CaminoVoxListAdapter lvAdapter;
-	private static final int MENU_CREATE_ALBERGUE = 1;
+	private MenuItem searchItem;
+//	private static final int MENU_CREATE_ALBERGUE = 1;
 	
 	
 	
@@ -64,29 +72,31 @@ public class CaminoVoxListAlberguesActivity extends Activity  {
 	protected void onCreate(Bundle savedInstanceState) { 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.layout_caminovox_listalbergue_activity);
-		
-		TextView tvTitre = (TextView) findViewById(R.id.tvCaminovoxListAlberguesTitre);
-		TextView tvTexte = (TextView) findViewById(R.id.tvCaminovoxListAlberguesTexte);
-		Typeface font2 = Typeface.createFromAsset(getAssets(), "font2.ttf");
-		tvTitre.setTypeface(font2);	
-		tvTexte.setTypeface(font2);	
-		 
-		ListView lvListAlbergue = (ListView) findViewById(R.id.lvCaminovoxListAlbergues);
-		
+				
 		Bundle bundle = getIntent().getExtras();
 		if(bundle!=null && bundle.containsKey("listAlbergues") && bundle.containsKey("listIdAlbergues") && bundle.containsKey("nameCity")){			
 			nameCity = bundle.getString("nameCity");
 			Log.i("CaminoVoxListAlberguesActivity", "nameCity="+nameCity);
+			
+			TextView tvTitre = (TextView) findViewById(R.id.tvCaminovoxListAlberguesTitre);
+			TextView tvTexte = (TextView) findViewById(R.id.tvCaminovoxListAlberguesTexte);
+			Typeface font2 = Typeface.createFromAsset(getAssets(), "font2.ttf");
+			tvTitre.setTypeface(font2);	
+			tvTexte.setTypeface(font2);				
 			tvTitre.setText(nameCity);
 		
+			ActionBar actionBar = getSupportActionBar();
+			actionBar.setDisplayHomeAsUpEnabled(true);
+			
+			ListView lvListAlbergue = (ListView) findViewById(R.id.lvCaminovoxListAlbergues);
 			listAlbergue = new ArrayList<String>();
 			listIdAlbergue = new ArrayList<Integer>();
 			listAlbergue = bundle.getStringArrayList("listAlbergues");
 			listIdAlbergue = bundle.getIntegerArrayList("listIdAlbergues");
 			lvAdapter = new CaminoVoxListAdapter(this.getBaseContext(),listAlbergue);
+			lvAdapter.getFilter().filter("");
 			lvListAlbergue.setAdapter(lvAdapter);
 			lvListAlbergue.setOnItemClickListener(new OnItemClickListener() {
-	
 				public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
 					_itemSelected=arg2;
 					mProgressDialog = ProgressDialog.show(CaminoVoxListAlberguesActivity.this, "","Please wait", true);
@@ -110,17 +120,17 @@ public class CaminoVoxListAlberguesActivity extends Activity  {
 				}
 			});
 			
-			EditText etFilter = (EditText) findViewById(R.id.etCaminovoxListAlberguesFilter);
-			etFilter.addTextChangedListener(new TextWatcher() {
-				
-				public void onTextChanged(CharSequence s, int start, int before, int count) { 
-					lvAdapter.getFilter().filter(s.toString());
-				}
-				
-				public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
-				
-				public void afterTextChanged(Editable s) { }
-			});
+//			EditText etFilter = (EditText) findViewById(R.id.etCaminovoxListAlberguesFilter);
+//			etFilter.addTextChangedListener(new TextWatcher() {
+//				
+//				public void onTextChanged(CharSequence s, int start, int before, int count) { 
+//					lvAdapter.getFilter().filter(s.toString());
+//				}
+//				
+//				public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+//				
+//				public void afterTextChanged(Editable s) { }
+//			});
 			
 		
 		}
@@ -215,30 +225,79 @@ public class CaminoVoxListAlberguesActivity extends Activity  {
 		* Méthode qui se déclenchera lorsque vous appuierez sur le bouton menu du téléphone
 		*/
 	    public boolean onCreateOptionsMenu(Menu menu) {
-	    	String menu1 = getResources().getString(R.string.MenuCaminoVoxAlbergueCreate);
-	    	 menu.add(0, MENU_CREATE_ALBERGUE, Menu.NONE, menu1); 
-	    	return true;
+//	    	String menu1 = getResources().getString(R.string.MenuCaminoVoxAlbergueCreate);
+//	    	 menu.add(0, MENU_CREATE_ALBERGUE, Menu.NONE, menu1); 
+//	    	return true;
+	    	getMenuInflater().inflate(R.menu.menu_caminovox_listalbergues, menu);
+	    	searchItem = menu.findItem(R.id.action_searchAlbergue);
+	        SearchView mSearchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+	    	mSearchView.setOnQueryTextListener(new OnQueryTextListener() { 
+					public boolean onQueryTextChange(String newText) {
+						Log.i("listAlbergue - onQueryTextChange", newText);
+						lvAdapter.getFilter().filter(newText.toString());
+						return true;
+					}
+					public boolean onQueryTextSubmit(String query) {
+						Log.i("listAlbergue - onQueryTextSubmit", query);
+						MenuItemCompat.collapseActionView(searchItem);
+						return true;
+					}		
+			});  
+			return super.onCreateOptionsMenu(menu); 
 	     }
+	    
+	    
 		 
 	    /**
 		* Méthode qui se déclenchera au clic sur un item
 		*/
 	    public boolean onOptionsItemSelected(MenuItem item) {
 	         //On regarde quel item a été cliqué grâce à son id et on déclenche une action
-	    	Intent intent = new Intent(CaminoVoxListAlberguesActivity.this, CaminoVoxNewAlbergueActivity.class);
-			Bundle b = new Bundle();							
+//	    	Intent intent = new Intent(CaminoVoxListAlberguesActivity.this, CaminoVoxNewAlbergueActivity.class);
+//			Bundle b = new Bundle();	
+	    	Intent intent;
 	         switch (item.getItemId()) {
-	            case MENU_CREATE_ALBERGUE: b.putBoolean("isNewStep", true);
-	            	intent.putExtras(b);
+	         case R.id.action_addAlbergue: 
+		            intent = new Intent(CaminoVoxListAlberguesActivity.this, CaminoVoxNewAlbergueActivity.class);
+					Bundle b = new Bundle();
+					b.putBoolean("isNewStep", true);							
+			        intent.putExtras(b);
 					startActivity(intent);
 					finish();
 					CaminoVoxListAlberguesActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
 					return true; 
+//	            case android.R.id.home : //retour à la page d'accueil via actionBar	            	
+//	            	intent = new Intent(CaminoVoxListAlberguesActivity.this,CompostelaMenuActivity.class);
+//	    	    	startActivity(intent);
+//	    			finish();
+//	    			CaminoVoxListAlberguesActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+//	            	return true;
+//	            case MENU_CREATE_ALBERGUE: b.putBoolean("isNewStep", true);
+//	            	intent.putExtras(b);
+//					startActivity(intent);
+//					finish();
+//					CaminoVoxListAlberguesActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+//					return true; 
 	         }
 	         return false;
 	       }
 		  
-
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		 if (keyCode == KeyEvent.KEYCODE_BACK) {
+			 Log.i("onkeydown", "keycode= keycode back = on appuie sur le bouton back !");
+			 if (MenuItemCompat.isActionViewExpanded(searchItem)) {
+				 Log.i("onkeydown", "actionview is expanded !");
+				 MenuItemCompat.collapseActionView(searchItem);
+				 lvAdapter.getFilter().filter("");					
+				 return true;
+			}else{ 
+				Log.i("onkeydown", "actionview is collapse !");
+				NavUtils.navigateUpFromSameTask(this);
+				CaminoVoxListAlberguesActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
+			}
+		 }return super.onKeyDown(keyCode, event);
+	}
 
 
 

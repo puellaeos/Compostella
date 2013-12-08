@@ -6,23 +6,13 @@
 
     <TextView
         android:id="@+id/tvCaminovoxListCityTitre"
-        style="@style/TitreActivity"
+        style="@style/TitreActivityWithActionBar"  
         android:text="@string/TitreCaminoVoxListCity"/>
 
      <TextView
         android:id="@+id/tvCaminovoxListCityTexte"
         style="@style/TexteSimple"
         android:text="@string/TexteCaminoVoxListCity"/>
-
-    <EditText
-        android:id="@+id/etCaminovoxListCityFilter"
-        style="@style/EditTextStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:hint="@string/TexteCaminoVoxListFilter"
-        android:inputType="text"
-        android:lines="1" 
-        android:imeOptions="actionDone"> </EditText >
 
     
     <ListView

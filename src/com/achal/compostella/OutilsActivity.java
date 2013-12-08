@@ -56,7 +56,7 @@ public class OutilsActivity extends Activity {
 		});
          bStepRoad.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				Intent intent = new Intent(OutilsActivity.this, CompostelleActivity.class);
+				Intent intent = new Intent(OutilsActivity.this, CompostelleListStepActivity.class);
 				startActivity(intent);
 				finish();
 				OutilsActivity.this.overridePendingTransition(R.anim.fondu_in, R.anim.fondu_out);
